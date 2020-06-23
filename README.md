@@ -43,6 +43,7 @@ python -m mtnlpmodel.train.py  #启动多输入模型训练
 ##### 从头训练
 ```
 vi configure.yaml 
+
 # finetune=false 
    # 以当前configure配置从头训练模型，模型参数随机初始化
 ```
@@ -55,7 +56,7 @@ vi configure.yaml
    # 在train.py中可根据实际权重参数存放位置修改model_weights_path
    # train.py中recommend_freeze_list的层为冻结层，不参与训练更新，可自行配置。
 ```
-######模型选择
+###### 模型选择
 ```
 vi configure.yaml 
 
