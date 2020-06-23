@@ -1,0 +1,6 @@
+{
+  "data_filepath": "./",
+  "input_rawdata": "input_data.txt",
+  "model_filepath": "./model/",
+  "output_filepath": "./inference_out/"
+}

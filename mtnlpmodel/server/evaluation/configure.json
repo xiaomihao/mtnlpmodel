@@ -1,0 +1,6 @@
+{
+  "data_filepath": "C:\\Users\\liang.mi\\Desktop\\out_put_model\\",
+  "data_filename": "test_diff.conllx",
+  "model_filepath": "C:\\Users\\liang.mi\\Desktop\\model\\",
+  "output_filepath": "./evaluation_out/"
+}

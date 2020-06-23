@@ -1,0 +1,51 @@
+# Data source
+data_source_scheme: local
+input_mode: "multi"
+data: "C:\\Users\\liang.mi\\Desktop\\new_train_test\\data.conllx"
+ner_data: "C:\\Users\\liang.mi\\Desktop\\new_train_test\\ner_data.conllx"
+cls_data: "C:\\Users\\liang.mi\\Desktop\\new_train_test\\cls_data.conllx"
+vocabulary_file: #"C:\\Users\\liang.mi\\Desktop\\new_train_test\\test_char.txt"
+test_ratio: 0.1
+shuffle_pool_size: 1000
+
+# model select
+finetune: false
+model_choice: "VIRTUAL_EMBEDDING"  # choose from "VIRTUAL_EMBEDDING", "CLS2NER_INPUT", "OTHER"
+
+# model configure
+epochs: 20
+pretrain_epochs: 5
+batch_size: 32
+pretrain_batchsize: 64
+intent_field: label
+max_steps:
+max_steps_without_increase: 15000
+embedding_dim: 128
+lstm_size: 100
+use_attention_layer: false
+max_sentence_len: 45
+cls2ner_keyword_len: 5
+Arcloss: true
+bilstm_stack_config: [
+{units: 100},
+# {units: 100, activation: 'seq2annotation.tf.python.keras.activations.relu6', recurrent_activation: 'seq2annotation.tf.python.keras.activations.relu6'},
+]
+crf_params: {use_boundary: true}
+learning_rate:
+lr_decay: false
+early_stop: false
+
+
+# Data output
+result_dir: "./results"
+params_log_file: "./results/params.json"
+model_dir: "./results/model_dir"
+h5_model_file: "./results/h5_model/model.h5"
+h5_weights_file: "./results/h5_weights/weights.h5"
+saved_model_dir: "./results/saved_model"
+deliverable_model_dir: "./results/deliverable_model"
+summary_log_dir: "./results/summary_log_dir"
+
+# checkpoint
+save_checkpoints_secs: 60
+throttle_secs: 60
