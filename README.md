@@ -43,6 +43,7 @@ python -m mtnlpmodel.train.py  #启动多输入模型训练
 ##### 从头训练
 ```
 vi configure.yaml 
+
 # finetune=false 
    # 以当前configure配置从头训练模型，模型参数随机初始化
 ```
