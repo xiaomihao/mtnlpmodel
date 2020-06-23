@@ -34,13 +34,13 @@ mtnlpmodel
 pip install mtnlpmodel
 ```
 ### Train
-* train.py：融合模型训练入口（包括：1.从头训练 'random_initial'；
+* train.py：融合模型训练入口（包括：1.正常训练 'random_initial'；
                                  2.fine-tuning 'load weights'）。
 ```
 # WORKDIR为configure.yaml所在的路径
 python -m mtnlpmodel.train.py  #启动多输入模型训练
 ```
-##### 从头训练
+##### 正常训练
 ```
 vi configure.yaml 
 
