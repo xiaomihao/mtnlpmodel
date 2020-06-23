@@ -1,0 +1,5976 @@
+#	{"label": "transfer_app", "id": "f71587c9-6383-4160-8ad2-7c3847262481"}
+切	O
+成	O
+抖	B-app
+音	L-app
+
+#	{"label": "to_position", "id": "50208d51-ff4a-4005-b871-245c45bb87de"}
+我	O
+打	O
+算	O
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+
+#	{"label": "install_app", "id": "0af3b3a5-08ea-4577-858a-498ee742355f"}
+装	O
+个	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "68327d1d-33cc-4329-bcb9-75703fa31739"}
+转	O
+换	O
+为	O
+头	B-app
+条	L-app
+界	O
+面	O
+
+#	{"label": "search_app", "id": "c6698cfe-3f75-42f1-bbc0-c01174166f00"}
+给	O
+我	O
+找	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "install_app", "id": "ebeac457-b0cc-4412-85b3-1d57bccdfb07"}
+装	O
+个	O
+头	B-app
+条	L-app
+
+#	{"label": "install_app", "id": "0da96d7d-d956-467e-bdf1-2eb1013d607d"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "search_app", "id": "455e44b3-4a0a-4206-8046-832ff3190923"}
+找	O
+找	O
+头	B-app
+条	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "to_position_pass_passby", "id": "f841d8a3-898f-4002-9be4-b53b7573a794"}
+去	O
+小	B-position
+商	I-position
+城	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+万	B-pass
+里	I-pass
+胡	I-pass
+同	L-pass
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "9bb89ae0-a168-47a2-a580-d7e2d9ed025b"}
+我	O
+打	O
+算	O
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "to_position_pass_passby", "id": "1a32b640-6a5f-4ba8-9825-68c7e9b049f2"}
+经	O
+过	O
+星	B-pass
+光	I-pass
+小	I-pass
+路	L-pass
+去	O
+往	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "5d7f8331-9696-414c-afa9-357793cf78d8"}
+我	O
+要	O
+去	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+
+#	{"label": "shutdown_app", "id": "8c7b32df-c5f2-42f8-975b-9ccfeb76eeb6"}
+把	O
+头	B-app
+条	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position_pass_passby", "id": "fe2d377b-fb7e-40d5-874e-94f47d2a246f"}
+路	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+去	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "turnon_app", "id": "e42fee1a-3e2c-44cb-a8ff-653f5d00ee00"}
+我	O
+想	O
+使	O
+用	O
+淘	B-app
+宝	L-app
+了	O
+
+#	{"label": "to_position", "id": "38092d17-0ca9-4fcb-b2b0-a9e15652b372"}
+我	O
+要	O
+去	O
+北	B-position
+京	L-position
+
+#	{"label": "transfer_app", "id": "aff890e1-59e5-4ec3-b69c-db91f6788ad4"}
+帮	O
+我	O
+切	O
+到	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "615cb4c2-e8be-438e-adb2-5f52b548addd"}
+转	O
+换	O
+为	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "search_app", "id": "ee39ee24-2d1c-4180-afb7-960759c5c7a4"}
+有	O
+没	O
+有	O
+抖	B-app
+音	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "to_position_pass_passby", "id": "fbb71a56-3612-4749-8642-f867e69de81c"}
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+小	B-pass
+商	I-pass
+城	L-pass
+了	O
+
+#	{"label": "shutdown_app", "id": "66a6a9fa-2dd0-4cf5-9644-ced5e55cf95f"}
+断	O
+开	O
+和	O
+头	B-app
+条	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "search_app", "id": "3a6d630b-38d0-4391-b78c-3da0858b072f"}
+找	O
+找	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "turnon_app", "id": "6257e378-0212-498e-b1f0-cf525b6966b3"}
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "to_position", "id": "eb93f95c-f1ca-43d5-b92c-ba375ef6c45b"}
+我	O
+要	O
+去	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+
+#	{"label": "to_position_pass_passby", "id": "839956cf-cfac-486c-b2f2-978a1356954d"}
+路	O
+过	O
+三	B-pass
+马	I-pass
+街	I-pass
+行	I-pass
+政	I-pass
+处	L-pass
+去	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+
+#	{"label": "search_app", "id": "380de88d-8789-4ea7-8070-fefa01b4a1dc"}
+给	O
+我	O
+找	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "to_position", "id": "f1c3ab98-c70f-44c4-8fd2-246a2e5d4b9b"}
+开	O
+车	O
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "to_position_pass_passby", "id": "9560e703-d7d7-4935-bbdb-e04d616dafa8"}
+往	O
+牛	B-position
+仔	I-position
+城	L-position
+方	O
+向	O
+经	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "transfer_app", "id": "de5d341c-9e3c-41a7-b337-e469ff4c6518"}
+转	O
+换	O
+为	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+界	O
+面	O
+
+#	{"label": "to_position_pass_passby", "id": "2a3f470c-6cb0-47e0-81a6-1b83b604ec93"}
+路	O
+过	O
+京	B-pass
+西	I-pass
+加	I-pass
+油	I-pass
+站	L-pass
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+
+#	{"label": "to_position", "id": "dce4f1ab-44c9-4dae-b0ce-a38ae02b335d"}
+我	O
+要	O
+去	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "search_app", "id": "02c493e1-dff0-42e1-b92e-999282c3f8cc"}
+找	O
+找	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "install_app", "id": "0d463721-2a5e-4311-b6c0-597026a30ec0"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+淘	B-app
+宝	L-app
+不	O
+
+#	{"label": "to_position_pass_passby", "id": "124ee825-d05b-4ef7-ba53-a645187c8165"}
+路	O
+过	O
+星	B-pass
+光	I-pass
+小	I-pass
+路	L-pass
+去	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "shutdown_app", "id": "277ba0a5-55fa-44b9-9b51-864cb6221552"}
+把	O
+头	B-app
+条	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "turnon_app", "id": "1c232bd6-1e04-46fa-8aa4-a4af8390de30"}
+我	O
+想	O
+开	O
+启	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "to_position_pass_passby", "id": "71c0c802-3749-4e09-ab99-2429f36f88ec"}
+我	O
+打	O
+算	O
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "to_position_pass_passby", "id": "f315ceef-9c82-4f92-a17e-ef1bede7f2ed"}
+给	O
+我	O
+看	O
+看	O
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "e68ee22c-c0b5-4124-a22e-4fb61d21c377"}
+我	O
+要	O
+经	O
+过	O
+南	B-pass
+北	I-pass
+城	I-pass
+行	I-pass
+政	I-pass
+中	I-pass
+心	L-pass
+到	O
+上	B-position
+海	L-position
+去	O
+
+#	{"label": "shutdown_app", "id": "83abcb3c-10e5-41d4-a934-952c10d3d64b"}
+把	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position_pass_passby", "id": "2cf966a6-6396-488e-8c55-18a62daa04ee"}
+往	O
+北	B-position
+京	L-position
+方	O
+向	O
+经	O
+过	O
+牛	B-pass
+仔	I-pass
+城	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "shutdown_app", "id": "dc8f6927-69e2-4150-ba88-19e001f4aa48"}
+我	O
+不	O
+想	O
+再	O
+用	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+了	O
+。	O
+
+#	{"label": "shutdown_app", "id": "7c215074-7ef8-411e-a9d1-3ebf799cda84"}
+不	O
+想	O
+再	O
+看	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+了	O
+
+#	{"label": "turnon_app", "id": "f75e83e7-8964-4139-a8bb-29771b6d8329"}
+我	O
+想	O
+开	O
+启	O
+淘	B-app
+宝	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "to_position", "id": "1bebc274-2c93-45e6-976c-e3e14f9ef6a8"}
+开	O
+车	O
+去	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "turnon_app", "id": "6ef551ba-5ec0-445d-b135-daf90af1fb86"}
+我	O
+想	O
+开	O
+启	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "to_position", "id": "3b9f5097-0a21-4dbb-a488-36325eb43a9e"}
+去	O
+一	O
+趟	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+
+#	{"label": "to_position", "id": "afe258d5-0199-499e-b6d1-649ef40e19ad"}
+往	O
+小	B-position
+商	I-position
+城	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "168f4f5b-76c5-40c6-9945-5d8804a8b8b5"}
+经	O
+过	O
+星	B-pass
+光	I-pass
+小	I-pass
+路	L-pass
+去	O
+往	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "search_app", "id": "a47876b9-1ec5-44da-a1b2-24f3788f1218"}
+查	O
+找	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "e4f64021-4527-4ad8-8625-42182a677eb4"}
+帮	O
+我	O
+回	O
+到	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+界	O
+面	O
+
+#	{"label": "turnon_app", "id": "cf540e38-4eb9-4bed-afea-f2f1e428a164"}
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "turnon_app", "id": "7eb686bf-7178-456c-bc26-120b10f47e21"}
+我	O
+想	O
+开	O
+启	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "to_position_pass_passby", "id": "fe7d4883-2c56-46cc-b1ad-7aab589e28a4"}
+开	O
+车	O
+去	O
+北	B-position
+京	L-position
+
+#	{"label": "install_app", "id": "8b795877-9771-4430-80e0-529b281a9c27"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+不	O
+
+#	{"label": "install_app", "id": "472291bf-5956-40f7-983b-8ec41783fc16"}
+装	O
+个	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "transfer_app", "id": "c8fa0e23-4012-4ef5-9cd2-830410201373"}
+帮	O
+我	O
+回	O
+到	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+界	O
+面	O
+
+#	{"label": "search_app", "id": "915a8d5b-70b7-4956-b5db-61b426b1d927"}
+搜	O
+索	O
+淘	B-app
+宝	L-app
+
+#	{"label": "to_position", "id": "95fa3633-12b2-4de1-86aa-4c30e62df26c"}
+我	O
+打	O
+算	O
+去	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+
+#	{"label": "to_position_pass_passby", "id": "64e88614-9f9d-46fb-af9c-9227812acb5e"}
+经	O
+过	O
+南	B-pass
+北	I-pass
+街	I-pass
+西	I-pass
+六	I-pass
+环	I-pass
+东	I-pass
+口	L-pass
+去	O
+往	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+
+#	{"label": "shutdown_app", "id": "22d0856f-57cf-45a9-bad1-438cbb621a31"}
+断	O
+开	O
+和	O
+淘	B-app
+宝	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "transfer_app", "id": "d5985521-b850-4ebc-83bd-0876655a4b99"}
+切	O
+换	O
+到	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "to_position", "id": "c9a5f563-ede9-4d64-9353-f6e89b9eda48"}
+开	O
+车	O
+去	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "to_position", "id": "5311bb3f-311f-42c2-b2be-0f9d98b1851d"}
+去	O
+一	O
+趟	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+
+#	{"label": "to_position", "id": "fe145e1b-95da-48cf-a6dd-29428bab0c3e"}
+给	O
+我	O
+看	O
+看	O
+去	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "shutdown_app", "id": "92cb2ac8-4d50-48d3-ac7e-e9f43d09576d"}
+不	O
+想	O
+再	O
+看	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+了	O
+
+#	{"label": "to_position", "id": "d6c66c61-23d4-4042-a1e8-8acebe9d2f5c"}
+去	O
+一	O
+趟	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+
+#	{"label": "search_app", "id": "04ec3062-e2a3-4430-a28c-c55eae6f0af1"}
+查	O
+找	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "turnon_app", "id": "3728b7c1-0159-4c61-929a-dfae2bc8c45f"}
+连	O
+上	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "shutdown_app", "id": "55e5b8eb-1901-46a1-bdb4-092b74037a15"}
+断	O
+开	O
+和	O
+抖	B-app
+音	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "install_app", "id": "c32fd4a5-b75d-44f4-a56c-64307a78e1b6"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+不	O
+
+#	{"label": "to_position_pass_passby", "id": "87374266-9093-4732-8232-4b9f1f72f3cb"}
+我	O
+打	O
+算	O
+去	O
+小	B-position
+商	I-position
+城	L-position
+
+#	{"label": "transfer_app", "id": "ee7e702b-24aa-4ff7-a69d-5a432ee63658"}
+切	O
+成	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position_pass_passby", "id": "2c43c4e2-a25b-4c89-a6dd-2e6cc1eae324"}
+我	O
+要	O
+经	O
+过	O
+云	B-pass
+锦	I-pass
+路	L-pass
+到	O
+上	B-position
+海	L-position
+去	O
+
+#	{"label": "search_app", "id": "1ce36cd7-bef8-4260-9267-150ff589807f"}
+找	O
+找	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "search_app", "id": "279cc90f-0cfe-4f0a-8b24-b44275d8c7a6"}
+查	O
+找	O
+淘	B-app
+宝	L-app
+
+#	{"label": "transfer_app", "id": "c7aa6dbf-4941-4523-9e6e-f9235a57da27"}
+帮	O
+我	O
+切	O
+到	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+界	O
+面	O
+
+#	{"label": "shutdown_app", "id": "cbcbcf55-c89b-4961-b0dd-eb87cd77d678"}
+我	O
+想	O
+把	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+关	O
+上	O
+
+#	{"label": "install_app", "id": "c9582f5f-8e5d-4fd1-ba2e-b136a097f2df"}
+装	O
+个	O
+抖	B-app
+音	L-app
+
+#	{"label": "shutdown_app", "id": "940a0fbc-52d7-408b-ac70-23a4855d3ab2"}
+把	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position_pass_passby", "id": "2022d81d-a575-4203-b886-3e187daccc28"}
+经	O
+过	O
+南	B-pass
+北	I-pass
+城	I-pass
+行	I-pass
+政	I-pass
+中	I-pass
+心	L-pass
+去	O
+往	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "search_app", "id": "b99039e5-851d-4fef-a840-3a4f86eb9129"}
+有	O
+没	O
+有	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "to_position", "id": "2d8e830a-92d8-4dd5-b1b0-205b812c9132"}
+给	O
+我	O
+看	O
+看	O
+去	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "transfer_app", "id": "123e729a-d0aa-4d3c-8f1e-ea6ef298c817"}
+帮	O
+我	O
+回	O
+到	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+界	O
+面	O
+
+#	{"label": "shutdown_app", "id": "1d5f26d2-4028-4862-a3d2-3d3e0b033c23"}
+不	O
+想	O
+再	O
+看	O
+头	B-app
+条	L-app
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "83998a05-bca1-43f8-81a1-cc1323a227ff"}
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+天	B-pass
+天	I-pass
+广	I-pass
+场	L-pass
+了	O
+
+#	{"label": "search_app", "id": "ab20862b-5c12-4686-ae8b-6978c8626c7e"}
+给	O
+我	O
+找	O
+头	B-app
+条	L-app
+
+#	{"label": "shutdown_app", "id": "aaa873ef-1b6e-4051-afa3-b412d85bb3eb"}
+不	O
+想	O
+再	O
+看	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+了	O
+
+#	{"label": "search_app", "id": "3cc37ce4-e2a6-4ff0-9eac-5985dc5ed330"}
+查	O
+找	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "install_app", "id": "c89d0443-7f9a-4227-bec9-f2616b8a5c1f"}
+装	O
+个	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position_pass_passby", "id": "936f4d0d-8efd-49c5-9d0f-75b77d2930af"}
+我	O
+打	O
+算	O
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+
+#	{"label": "search_app", "id": "3f2b2a2f-2767-4d82-b306-9afa8d98fcf5"}
+帮	O
+我	O
+找	O
+下	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position", "id": "08fad0ee-8446-4bef-bf31-caaeb9ef311d"}
+我	O
+要	O
+去	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+
+#	{"label": "search_app", "id": "be9157fe-d413-4771-8002-98622d0925ca"}
+给	O
+我	O
+找	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "c18208d6-e3f0-4f9e-988d-6c158dcbc710"}
+帮	O
+我	O
+回	O
+到	O
+头	B-app
+条	L-app
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "014d26df-c586-49da-879e-e401a1ef322e"}
+切	O
+换	O
+到	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "turnon_app", "id": "2c0de055-bd1f-4bb0-b365-91b37d01c817"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "to_position_pass_passby", "id": "e00817a0-b0fb-48f4-ac49-157a08b439a6"}
+路	O
+过	O
+万	B-pass
+里	I-pass
+胡	I-pass
+同	L-pass
+去	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "to_position", "id": "023a2d6f-9b38-40df-8ca1-57cbccdb42b3"}
+我	O
+要	O
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "turnon_app", "id": "79ef0bae-9d5b-4e99-98e9-7d59eec24036"}
+我	O
+想	O
+开	O
+启	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "search_app", "id": "5b94b2b9-0d83-4c07-9aff-5c336c340bde"}
+给	O
+我	O
+找	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "503b7242-3c23-4212-9964-640c5806c4ec"}
+帮	O
+我	O
+回	O
+到	O
+淘	B-app
+宝	L-app
+界	O
+面	O
+
+#	{"label": "turnon_app", "id": "fd5f1f5e-b92d-45c2-bcb2-51af66420103"}
+我	O
+想	O
+开	O
+启	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "eb4f80de-6b62-4d22-8f4c-775306862ef6"}
+切	O
+换	O
+到	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "search_app", "id": "f05749fb-0520-4386-85f8-217cf541f694"}
+搜	O
+索	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "to_position_pass_passby", "id": "13520345-8029-4abf-9ab4-280b23e41b76"}
+路	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "to_position_pass_passby", "id": "689d4fee-a64b-4250-bcb5-90fafaa0f5f7"}
+给	O
+我	O
+看	O
+看	O
+去	O
+骑	B-position
+行	I-position
+城	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position", "id": "58fc2687-7ea7-4b71-8f3c-9bfd70ca2393"}
+往	O
+骑	B-position
+行	I-position
+城	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "ee44b9f4-0b8f-4000-8fb8-0cfc1e717415"}
+往	O
+七	B-position
+星	I-position
+街	L-position
+方	O
+向	O
+经	O
+过	O
+牛	B-pass
+仔	I-pass
+城	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "to_position_pass_passby", "id": "2fb58272-b6db-4d2c-a174-33b966fd9d5f"}
+经	O
+过	O
+牛	B-pass
+仔	I-pass
+城	L-pass
+去	O
+往	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "to_position_pass_passby", "id": "e77d79c0-33cc-4e6c-902b-c81c2e2dbc9e"}
+我	O
+打	O
+算	O
+去	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+
+#	{"label": "transfer_app", "id": "24b36f51-5532-42e1-a41c-1053297b09fb"}
+切	O
+换	O
+到	O
+淘	B-app
+宝	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "to_position_pass_passby", "id": "88032a71-c51b-4055-bd69-c69d2a2bfdc4"}
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+星	B-pass
+光	I-pass
+小	I-pass
+路	L-pass
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "75f210d9-7982-4ecc-b140-ff3e014ee7a0"}
+去	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+东	B-pass
+西	I-pass
+向	I-pass
+南	I-pass
+门	I-pass
+北	I-pass
+大	I-pass
+街	L-pass
+了	O
+
+#	{"label": "to_position", "id": "af3a4c89-6793-40a8-a824-d3a5320354dc"}
+往	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "962ba13b-5cd3-4c17-8659-00a09292efdd"}
+我	O
+要	O
+经	O
+过	O
+东	B-pass
+西	I-pass
+向	I-pass
+南	I-pass
+门	I-pass
+北	I-pass
+大	I-pass
+街	L-pass
+到	O
+北	B-position
+京	L-position
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "2232b3cc-6fbb-41d8-aa97-345530686d10"}
+开	O
+车	O
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+
+#	{"label": "install_app", "id": "be73a3b2-5799-438e-ab5e-c88660adb8f4"}
+安	O
+装	O
+淘	B-app
+宝	L-app
+
+#	{"label": "turnon_app", "id": "678dc5d8-03c2-46c3-9516-b0b91ff87861"}
+连	O
+上	O
+头	B-app
+条	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "turnon_app", "id": "9ef52e8e-54e9-4c0b-80bf-e811a1b5b475"}
+连	O
+上	O
+抖	B-app
+音	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "transfer_app", "id": "e172e649-4eed-496e-ba88-7f5f4dd60813"}
+切	O
+换	O
+到	O
+头	B-app
+条	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "search_app", "id": "344e1017-b125-4814-ab5c-35f88ecce816"}
+有	O
+没	O
+有	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "to_position", "id": "c28fcf88-696e-42ef-91ed-339997515369"}
+往	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "search_app", "id": "4aa6d30b-4c68-40cb-933b-ba367d65e9d9"}
+给	O
+我	O
+找	O
+淘	B-app
+宝	L-app
+
+#	{"label": "shutdown_app", "id": "abed82f5-1231-4235-bf9f-f1d18f4e26eb"}
+断	O
+开	O
+和	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "to_position", "id": "e74dec06-b732-4c24-9e66-ecd8765754b0"}
+开	O
+车	O
+去	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+
+#	{"label": "shutdown_app", "id": "2fd3c05c-d2ae-400e-a670-5c7dc0a88309"}
+把	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position", "id": "c8975c63-fdc9-441d-b9b1-c9e2ec5e17e2"}
+去	O
+一	O
+趟	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+
+#	{"label": "to_position", "id": "b645f5ca-896b-4f6a-8193-d881b18e97e2"}
+我	O
+打	O
+算	O
+去	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+
+#	{"label": "to_position_pass_passby", "id": "0c331ed3-b13c-4399-a81e-9666471cbf60"}
+去	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+三	B-pass
+马	I-pass
+街	I-pass
+行	I-pass
+政	I-pass
+处	L-pass
+了	O
+
+#	{"label": "turnon_app", "id": "3c80e7c5-8c25-4adf-a822-2fb0541aa0a3"}
+我	O
+想	O
+开	O
+启	O
+头	B-app
+条	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "turnon_app", "id": "0be36748-e853-4975-ae85-52748c0b0eee"}
+我	O
+要	O
+进	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "to_position_pass_passby", "id": "23aaa9f9-e451-4fd9-9b35-1575389864a0"}
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+了	O
+
+#	{"label": "transfer_app", "id": "9b8a480f-54b1-4afc-bdff-cdc08ef5b634"}
+切	O
+换	O
+到	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "to_position", "id": "09b1a3db-2045-4710-971e-2449ab5b5c46"}
+往	O
+云	B-position
+锦	I-position
+路	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "install_app", "id": "cc2e3cc0-5c35-4479-82fc-10687d8e51e7"}
+我	O
+要	O
+装	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "search_app", "id": "8afdbc16-f9bf-4bde-a2f2-e04904b1463c"}
+有	O
+没	O
+有	O
+淘	B-app
+宝	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "to_position", "id": "26445eab-9c22-41a3-a430-de9b8327c935"}
+去	O
+一	O
+趟	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+
+#	{"label": "to_position", "id": "38a3d8ae-1663-4c75-8dcc-9f6f25803674"}
+往	O
+七	B-position
+星	I-position
+街	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position", "id": "f6ae58a7-564a-4a7c-a876-8408955ee5eb"}
+去	O
+一	O
+趟	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "transfer_app", "id": "1617ad94-f9b9-4783-ab37-069bd9133a01"}
+切	O
+成	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position", "id": "8f2e7339-af4d-440c-b0ab-dcbc177d0352"}
+我	O
+要	O
+去	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "94c64a8d-9450-4107-a1e6-5db09bbe8800"}
+我	O
+要	O
+去	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+
+#	{"label": "to_position", "id": "6c86f735-f904-46fc-9628-6692c336e083"}
+我	O
+打	O
+算	O
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "to_position_pass_passby", "id": "900c5683-16e2-43ed-8f0a-011e48ad344e"}
+去	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+了	O
+
+#	{"label": "transfer_app", "id": "0e1fa7ad-a8af-492b-88c8-e8cc72e3b9fe"}
+切	O
+成	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "shutdown_app", "id": "83d9a1fe-de55-4dce-8898-e0bdb0fa711a"}
+断	O
+开	O
+和	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "turnon_app", "id": "d5f10707-8859-4f31-995c-350782b9c894"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "to_position", "id": "74556a9f-e134-4ad3-b0fe-eb4f01be58f1"}
+开	O
+车	O
+去	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+
+#	{"label": "search_app", "id": "29f6c62e-269e-41e8-84cb-c975328cb7b1"}
+找	O
+找	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "to_position_pass_passby", "id": "208f2da7-c03f-4ca1-b28e-7bce4365ea80"}
+经	O
+过	O
+星	B-pass
+光	I-pass
+小	I-pass
+路	L-pass
+去	O
+往	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "to_position_pass_passby", "id": "bb8a4a57-6938-493f-98f0-b89ede76e8d8"}
+路	O
+过	O
+军	B-pass
+情	I-pass
+七	I-pass
+处	L-pass
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "shutdown_app", "id": "7ae7db87-03c5-4efc-bc7d-98aa8738d692"}
+我	O
+不	O
+想	O
+再	O
+用	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+了	O
+。	O
+
+#	{"label": "turnon_app", "id": "9bbba67d-d504-4cc1-8fee-f1d68648f44b"}
+我	O
+想	O
+使	O
+用	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+了	O
+
+#	{"label": "transfer_app", "id": "3bb151fc-a667-4b50-bfb3-77aa76bce2d6"}
+切	O
+换	O
+到	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "install_app", "id": "d3711fef-0c88-4238-8955-df03e4d20498"}
+我	O
+要	O
+装	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "to_position_pass_passby", "id": "970bd654-2c53-42f7-a257-da097470ed82"}
+我	O
+要	O
+经	O
+过	O
+东	B-pass
+西	I-pass
+向	I-pass
+南	I-pass
+门	I-pass
+北	I-pass
+大	I-pass
+街	L-pass
+到	O
+骑	B-position
+行	I-position
+城	L-position
+去	O
+
+#	{"label": "to_position", "id": "986070cd-d4f5-4164-8959-c433a0f9dcee"}
+去	O
+一	O
+趟	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "to_position_pass_passby", "id": "20cbb8a9-82dc-4b0e-b6bd-dbefaf95d1b7"}
+我	O
+打	O
+算	O
+去	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "shutdown_app", "id": "d71487b5-8200-41a5-bbcb-9b5a5b6bf8ef"}
+把	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "search_app", "id": "e75be934-a4d1-4018-b696-59f85e834408"}
+查	O
+找	O
+头	B-app
+条	L-app
+
+#	{"label": "transfer_app", "id": "a181decd-ff6a-4190-910a-e0e2cbe47c4f"}
+转	O
+换	O
+为	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+界	O
+面	O
+
+#	{"label": "turnon_app", "id": "228c6362-ab96-4a49-b954-badaeb80c7a0"}
+我	O
+想	O
+使	O
+用	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+了	O
+
+#	{"label": "search_app", "id": "8f856e68-806a-46ff-acd4-a0634f151af2"}
+有	O
+没	O
+有	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "turnon_app", "id": "0d55b7b2-8489-4e8f-9158-7b5b715f2c8f"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+淘	B-app
+宝	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "install_app", "id": "02994d31-f12f-4fa2-a9d2-5e5d31abc5f7"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+不	O
+
+#	{"label": "to_position_pass_passby", "id": "027a95b9-9a11-433b-a400-db6522df53a4"}
+去	O
+七	B-position
+星	I-position
+街	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+云	B-pass
+锦	I-pass
+路	L-pass
+了	O
+
+#	{"label": "shutdown_app", "id": "a87ee83a-b477-4a20-bc39-4c131f5b1d70"}
+我	O
+想	O
+把	O
+头	B-app
+条	L-app
+关	O
+上	O
+
+#	{"label": "to_position_pass_passby", "id": "7944a9a9-546a-4ed7-a381-4d1ed39787a7"}
+往	O
+北	B-position
+京	L-position
+方	O
+向	O
+经	O
+过	O
+天	B-pass
+天	I-pass
+广	I-pass
+场	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "to_position_pass_passby", "id": "05d48731-a15c-49b3-a295-95aff03a8597"}
+往	O
+上	B-position
+海	L-position
+方	O
+向	O
+经	O
+过	O
+西	B-pass
+马	I-pass
+路	I-pass
+派	I-pass
+出	I-pass
+所	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "install_app", "id": "8d3e6fc5-b736-4e50-a4a3-41e971a85908"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "f509978c-6eec-449c-a5ac-c5b174e0709a"}
+转	O
+换	O
+为	O
+抖	B-app
+音	L-app
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "0af49687-455b-4ef0-9304-502e9725de17"}
+切	O
+换	O
+到	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "to_position", "id": "8d7f481b-8410-40fa-8e3a-907d6285873f"}
+我	O
+打	O
+算	O
+去	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+
+#	{"label": "search_app", "id": "71cfbd7a-ff27-487e-90e1-a1d9c232cf0d"}
+帮	O
+我	O
+找	O
+下	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "transfer_app", "id": "efb43d73-8a6e-44b1-9791-e71fa2aced01"}
+帮	O
+我	O
+切	O
+到	O
+抖	B-app
+音	L-app
+界	O
+面	O
+
+#	{"label": "to_position_pass_passby", "id": "eec46936-ab90-4b4c-a957-a4676bd63824"}
+去	O
+上	B-position
+海	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+步	B-pass
+行	I-pass
+街	L-pass
+了	O
+
+#	{"label": "install_app", "id": "20ead08f-1838-44bd-8259-a2aede4ccdef"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+不	O
+
+#	{"label": "to_position_pass_passby", "id": "3d7d859a-4aa3-4981-9109-e5a9252e8ef2"}
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+牛	B-pass
+仔	I-pass
+城	L-pass
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "cedb57f9-418b-4ea4-b555-8f76702817c1"}
+路	O
+过	O
+步	B-pass
+行	I-pass
+街	L-pass
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "a5c5b3bd-c092-4f8a-9489-3f83531dad9c"}
+往	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "install_app", "id": "3d97a131-a27b-41d7-996b-52ce2ddd8e8c"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+头	B-app
+条	L-app
+不	O
+
+#	{"label": "to_position", "id": "04b44cc7-8f04-498c-a234-8fa762bab29e"}
+去	O
+一	O
+趟	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "to_position_pass_passby", "id": "e22918dd-1dd7-410d-a00f-85e50eb87bf8"}
+路	O
+过	O
+西	B-pass
+马	I-pass
+路	I-pass
+派	I-pass
+出	I-pass
+所	L-pass
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "to_position_pass_passby", "id": "f42edca8-1a33-4006-a322-2cfee646574f"}
+往	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+方	O
+向	O
+经	O
+过	O
+南	B-pass
+北	I-pass
+城	I-pass
+行	I-pass
+政	I-pass
+中	I-pass
+心	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "shutdown_app", "id": "5684aa66-8676-4ae3-b5ca-f79fb0cdf005"}
+把	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "to_position", "id": "fc3c8337-0312-4650-a0d9-d41b8ae62912"}
+开	O
+车	O
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "to_position", "id": "ebab536b-1378-48b1-9921-070914ee6e2d"}
+我	O
+要	O
+去	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+
+#	{"label": "turnon_app", "id": "5b3723ae-db1e-4c72-89a9-25d06625115a"}
+连	O
+上	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "to_position_pass_passby", "id": "eb4dc1fc-545f-4d8e-bc3d-d9451a03426f"}
+开	O
+车	O
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "to_position", "id": "74ef3449-0559-45ce-aeb1-21359726621c"}
+往	O
+北	B-position
+京	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "1c8ad37f-58af-4abc-b0cb-a8bd883ca575"}
+往	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+方	O
+向	O
+经	O
+过	O
+京	B-pass
+西	I-pass
+加	I-pass
+油	I-pass
+站	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "shutdown_app", "id": "44cffa52-f8a1-4aa4-9865-ec70b63da5f4"}
+断	O
+开	O
+和	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "install_app", "id": "1b1520d4-b25e-4171-b732-041b39a3ffd0"}
+我	O
+要	O
+装	O
+抖	B-app
+音	L-app
+
+#	{"label": "to_position_pass_passby", "id": "47f535e4-166f-4196-ae3a-1d6c040a29ec"}
+往	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+方	O
+向	O
+经	O
+过	O
+万	B-pass
+里	I-pass
+胡	I-pass
+同	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "to_position", "id": "28aff7ac-e695-4410-b523-4d83844587e6"}
+我	O
+要	O
+去	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+
+#	{"label": "install_app", "id": "faa894c6-045a-4855-8779-445fcbdcc06e"}
+我	O
+要	O
+装	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "55aee0b9-48eb-4f15-9b17-8e0ced67d3b1"}
+帮	O
+我	O
+回	O
+到	O
+抖	B-app
+音	L-app
+界	O
+面	O
+
+#	{"label": "turnon_app", "id": "2161d965-3ca2-4810-985f-6b78563e208f"}
+连	O
+上	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "to_position_pass_passby", "id": "bd4394c1-59db-4d2d-8ac9-262fe869f7b4"}
+往	O
+云	B-position
+锦	I-position
+路	L-position
+方	O
+向	O
+经	O
+过	O
+天	B-pass
+天	I-pass
+广	I-pass
+场	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "install_app", "id": "1400e750-a652-4032-b3cb-7d882137ee91"}
+安	O
+装	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "to_position_pass_passby", "id": "fadbb6ec-57a8-41ee-a14a-760b85aec7d4"}
+我	O
+要	O
+经	O
+过	O
+政	B-pass
+府	I-pass
+大	I-pass
+街	L-pass
+到	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+去	O
+
+#	{"label": "to_position", "id": "9e3a6c0c-95bc-424f-aa64-81ce78f01f2b"}
+给	O
+我	O
+看	O
+看	O
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "turnon_app", "id": "ab23d368-b5ec-44a1-a327-00a33049d162"}
+我	O
+想	O
+使	O
+用	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+了	O
+
+#	{"label": "to_position", "id": "312313dd-8d5a-4ba2-9cee-8c55bcc20fb7"}
+开	O
+车	O
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+
+#	{"label": "install_app", "id": "d0c1f09f-c297-4182-bf92-f95932ea81f5"}
+安	O
+装	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "to_position_pass_passby", "id": "9d1b0104-1632-4cf9-b632-dc1a0f53b64d"}
+给	O
+我	O
+看	O
+看	O
+去	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "turnon_app", "id": "82c24cbf-d5b4-451f-b3c1-ee8f329ebc48"}
+我	O
+要	O
+进	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "to_position", "id": "d407d7ba-70ea-4ea0-84ef-9778cbc63065"}
+开	O
+车	O
+去	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+
+#	{"label": "search_app", "id": "9d586a5d-5c58-4bac-85f3-184badc3a961"}
+搜	O
+索	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "turnon_app", "id": "0dc920e3-6acd-4c54-aefa-516a44c05a02"}
+淘	B-app
+宝	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "to_position", "id": "8810d471-a9cd-4216-bbc4-a9ea527d16e7"}
+我	O
+打	O
+算	O
+去	O
+小	B-position
+商	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "c6629cb3-201f-4764-9a00-4ea4785eb0cd"}
+去	O
+一	O
+趟	O
+上	B-position
+海	L-position
+
+#	{"label": "to_position_pass_passby", "id": "a75a5373-4996-405e-bbb8-eaeec0528d53"}
+经	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+去	O
+往	O
+上	B-position
+海	L-position
+
+#	{"label": "search_app", "id": "49c6530b-95e4-4b19-9e2f-350da1ded603"}
+查	O
+找	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position", "id": "3c8236cc-a355-45ac-827c-587253ef0555"}
+开	O
+车	O
+去	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "shutdown_app", "id": "9a8f2cb1-1fbb-4bc0-89ec-f28c65243034"}
+断	O
+开	O
+和	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "search_app", "id": "da2fcace-5ecb-4eed-9ae5-18b103470671"}
+帮	O
+我	O
+找	O
+下	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position_pass_passby", "id": "806c89c4-dd1a-431e-81d8-d8e54d5e595e"}
+路	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+去	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+
+#	{"label": "to_position_pass_passby", "id": "ba6bee6c-e3d4-46ea-a7e6-6371028aebac"}
+往	O
+牛	B-position
+仔	I-position
+城	L-position
+方	O
+向	O
+经	O
+过	O
+三	B-pass
+马	I-pass
+街	I-pass
+行	I-pass
+政	I-pass
+处	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "to_position_pass_passby", "id": "b550d818-937f-4d00-aaf5-0b3d45af70ff"}
+经	O
+过	O
+步	B-pass
+行	I-pass
+街	L-pass
+去	O
+往	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+
+#	{"label": "shutdown_app", "id": "63c27c38-f5a2-420c-bc01-093dcd53bee2"}
+我	O
+不	O
+想	O
+再	O
+用	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+了	O
+。	O
+
+#	{"label": "to_position_pass_passby", "id": "7190f1ec-908b-4a31-9035-c3bb64e715db"}
+我	O
+要	O
+经	O
+过	O
+西	B-pass
+马	I-pass
+路	I-pass
+派	I-pass
+出	I-pass
+所	L-pass
+到	O
+牛	B-position
+仔	I-position
+城	L-position
+去	O
+
+#	{"label": "search_app", "id": "6fa6b6de-047e-4cb0-852c-bc5f1ba18f66"}
+给	O
+我	O
+找	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "to_position_pass_passby", "id": "84742233-3e64-4f52-a1fa-8e03566a5dde"}
+往	O
+上	B-position
+海	L-position
+方	O
+向	O
+经	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "transfer_app", "id": "4f84d424-a06a-41e1-b212-de93113289d0"}
+切	O
+换	O
+到	O
+抖	B-app
+音	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "install_app", "id": "4344267e-b31f-451c-9e7d-53e0cd269563"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "to_position", "id": "6c16c163-e24b-48e8-bf7e-48ca41de51bf"}
+给	O
+我	O
+看	O
+看	O
+去	O
+七	B-position
+星	I-position
+街	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "transfer_app", "id": "dcd19ce1-16f7-4fb8-97c9-ef5588c9bdff"}
+切	O
+成	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position_pass_passby", "id": "7f2343e8-4e42-4970-9fbc-eb89be3af0e6"}
+路	O
+过	O
+南	B-pass
+北	I-pass
+街	I-pass
+西	I-pass
+六	I-pass
+环	I-pass
+东	I-pass
+口	L-pass
+去	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "transfer_app", "id": "e9c5747f-2b77-42ac-bfd4-df0c34200fa5"}
+帮	O
+我	O
+切	O
+到	O
+头	B-app
+条	L-app
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "aa46a91a-96f9-41dd-9ec4-12ed446e7ac2"}
+切	O
+成	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "to_position", "id": "ae1ce901-e2ba-4be8-a577-eb5eedd3d2e6"}
+给	O
+我	O
+看	O
+看	O
+去	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "turnon_app", "id": "de9f948d-66f1-4c2b-9e05-8978e7781908"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "shutdown_app", "id": "1156d04b-f15a-4433-b731-5cb44eaca808"}
+我	O
+想	O
+把	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+关	O
+上	O
+
+#	{"label": "shutdown_app", "id": "188380f2-77b1-4b48-91d7-0f3aa3d0a08e"}
+断	O
+开	O
+和	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "to_position_pass_passby", "id": "ee181766-55ba-44f3-8a6a-fdeb3841a28e"}
+我	O
+要	O
+经	O
+过	O
+军	B-pass
+情	I-pass
+七	I-pass
+处	L-pass
+到	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+去	O
+
+#	{"label": "to_position", "id": "d2a6f106-13b7-44ec-8d72-c450a1a2da16"}
+去	O
+一	O
+趟	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "shutdown_app", "id": "3443f736-45ef-4410-bc69-f025ddd5d8bf"}
+我	O
+想	O
+把	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+关	O
+上	O
+
+#	{"label": "to_position", "id": "ef2cbdd8-b246-4e98-85c4-242573b3e537"}
+往	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "581e9802-a65b-4055-a629-aea3156ed909"}
+往	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+方	O
+向	O
+经	O
+过	O
+南	B-pass
+北	I-pass
+街	I-pass
+西	I-pass
+六	I-pass
+环	I-pass
+东	I-pass
+口	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "to_position", "id": "50586c02-a123-4bd0-92ca-4a908c682dae"}
+给	O
+我	O
+看	O
+看	O
+去	O
+步	B-position
+行	I-position
+街	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "shutdown_app", "id": "4930ba75-447a-4255-8170-ff2985431aba"}
+不	O
+想	O
+再	O
+看	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+了	O
+
+#	{"label": "to_position", "id": "6e32e663-29ff-4e86-a9ef-d675c1d17638"}
+我	O
+打	O
+算	O
+去	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "to_position_pass_passby", "id": "99108831-0b4c-47f0-9852-b29c84bcc193"}
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+步	B-pass
+行	I-pass
+街	L-pass
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "99ff94e5-26a4-4f0c-879b-58a97106dddf"}
+给	O
+我	O
+看	O
+看	O
+去	O
+上	B-position
+海	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "turnon_app", "id": "85223587-f583-40c6-b623-0fde6dd8d10a"}
+我	O
+想	O
+使	O
+用	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+了	O
+
+#	{"label": "shutdown_app", "id": "6fa713c0-bd54-4853-9fa0-6df46f0b64db"}
+把	O
+抖	B-app
+音	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "search_app", "id": "4eb9279e-0e55-40cd-9e29-752e1f58346c"}
+有	O
+没	O
+有	O
+头	B-app
+条	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "to_position", "id": "a1b580b2-fc3c-405d-8e84-e8cb83e2c26d"}
+往	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "shutdown_app", "id": "8c3a6be6-4f82-4b5c-a262-c3a8f4a74b7b"}
+把	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "to_position", "id": "20c9bf4c-318f-480a-9bc7-f22bf9af66b0"}
+往	O
+上	B-position
+海	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "search_app", "id": "d99007f4-3dd7-4ceb-a9a1-bd86d07410b0"}
+搜	O
+索	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "turnon_app", "id": "3502b0ba-b7d6-4149-86bc-8bb0553d0817"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "search_app", "id": "1f121623-9b61-4551-bf04-cddb6bc9827c"}
+帮	O
+我	O
+找	O
+下	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "turnon_app", "id": "0b69ad38-8fe6-4991-8c27-d7b052909264"}
+连	O
+上	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "to_position", "id": "6693a8ec-541d-48a6-9b71-d6b411ca10f0"}
+开	O
+车	O
+去	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+
+#	{"label": "to_position", "id": "3218a7e3-2261-4f31-8c57-35289488eb3a"}
+给	O
+我	O
+看	O
+看	O
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position", "id": "422d2067-54fc-44b6-a756-e66800803bf5"}
+我	O
+打	O
+算	O
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "to_position_pass_passby", "id": "3a1dc421-b591-4d7f-a765-6870f89c702d"}
+我	O
+要	O
+经	O
+过	O
+云	B-pass
+锦	I-pass
+路	L-pass
+到	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "89f50ebf-60f8-4e7c-8bef-8fc16ea26cdc"}
+往	O
+云	B-position
+锦	I-position
+路	L-position
+方	O
+向	O
+经	O
+过	O
+南	B-pass
+北	I-pass
+街	I-pass
+西	I-pass
+六	I-pass
+环	I-pass
+东	I-pass
+口	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "install_app", "id": "2dc28867-f98f-413f-a75b-74589c20dbcb"}
+我	O
+要	O
+装	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "install_app", "id": "c24ca0bb-b0cd-44ce-b58c-bbaaf7855cb8"}
+装	O
+个	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "turnon_app", "id": "f56e630f-e632-41b5-b5f3-8f500feef7bf"}
+我	O
+想	O
+开	O
+启	O
+抖	B-app
+音	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "to_position_pass_passby", "id": "5bba614b-0f34-4397-96c8-6508090be6c2"}
+开	O
+车	O
+去	O
+三	B-position
+马	I-position
+街	I-position
+行	I-position
+政	I-position
+处	L-position
+
+#	{"label": "shutdown_app", "id": "d4ded191-cc1e-4e1e-93b2-f9bdbb724bf2"}
+把	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position", "id": "47a57948-b9bf-4612-9754-e9d0ef68e090"}
+给	O
+我	O
+看	O
+看	O
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "shutdown_app", "id": "44ac9de9-bc74-48fa-ab95-1f89d5107c42"}
+我	O
+想	O
+把	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+关	O
+上	O
+
+#	{"label": "shutdown_app", "id": "e82a55bf-103b-4788-943f-2cebb3c8a523"}
+我	O
+想	O
+把	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+关	O
+上	O
+
+#	{"label": "turnon_app", "id": "ff7c3a1f-d623-4e02-a951-e0cf017df52a"}
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "transfer_app", "id": "352e8be6-3136-4f0e-963a-57b2ea42cbab"}
+转	O
+换	O
+为	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+界	O
+面	O
+
+#	{"label": "to_position", "id": "253f68a3-b3c1-43ef-8681-e2fc31b9719f"}
+我	O
+打	O
+算	O
+去	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+
+#	{"label": "to_position_pass_passby", "id": "850532fd-d105-48c6-ad12-57724b668a6e"}
+我	O
+要	O
+经	O
+过	O
+阳	B-pass
+光	I-pass
+甬	I-pass
+道	L-pass
+到	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+去	O
+
+#	{"label": "to_position", "id": "f9f19a58-b87b-4ee2-a1f6-f9066a445ca1"}
+我	O
+打	O
+算	O
+去	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+
+#	{"label": "turnon_app", "id": "e3964271-d090-4d3c-b16a-79f9ae6108b0"}
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "to_position_pass_passby", "id": "ffc3e0ef-df8c-450b-951e-b6874c4a2367"}
+路	O
+过	O
+三	B-pass
+马	I-pass
+街	I-pass
+行	I-pass
+政	I-pass
+处	L-pass
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "turnon_app", "id": "243cae5e-9f99-491d-bd92-cd6632941581"}
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "to_position_pass_passby", "id": "72ca550f-9d74-4878-a705-2882b2272c5c"}
+给	O
+我	O
+看	O
+看	O
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position", "id": "749c2b94-1a1d-4122-879e-7e7a0441bd2d"}
+往	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "dacb4410-8b36-4d7d-a1ae-3faa8a4a1dcf"}
+经	O
+过	O
+南	B-pass
+北	I-pass
+城	I-pass
+行	I-pass
+政	I-pass
+中	I-pass
+心	L-pass
+去	O
+往	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "transfer_app", "id": "1d1551e0-3ae2-41b7-a48a-9fa35e82a220"}
+帮	O
+我	O
+回	O
+到	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "search_app", "id": "77d43a91-a375-4f3c-83cd-6c6884f3bbb9"}
+搜	O
+索	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position", "id": "6ffffb64-715b-4510-96c7-3e34516c218d"}
+去	O
+一	O
+趟	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "to_position_pass_passby", "id": "8218a85c-7104-43ef-93fe-4b262d908737"}
+给	O
+我	O
+看	O
+看	O
+去	O
+小	B-position
+商	I-position
+城	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position", "id": "38f4e007-05c9-4802-bc96-9608ed5215b1"}
+我	O
+要	O
+去	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "turnon_app", "id": "90da6c6f-6488-44c3-a72d-a80c9009ffd4"}
+连	O
+上	O
+淘	B-app
+宝	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "to_position_pass_passby", "id": "021d8957-ec41-4f7f-bd4c-9eba3bf18a78"}
+给	O
+我	O
+看	O
+看	O
+去	O
+云	B-position
+锦	I-position
+路	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "d9d5dc11-3df5-4ec0-b0a7-fcac7d0e8605"}
+路	O
+过	O
+京	B-pass
+西	I-pass
+加	I-pass
+油	I-pass
+站	L-pass
+去	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "to_position", "id": "24f3b161-ace9-48a9-9116-61371b3ab72c"}
+往	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "cd222516-1c41-4bc6-b798-11635b95c5b3"}
+我	O
+要	O
+经	O
+过	O
+天	B-pass
+天	I-pass
+广	I-pass
+场	L-pass
+到	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "b28f043f-ee09-4794-ba44-0d1cfce8996c"}
+我	O
+要	O
+经	O
+过	O
+天	B-pass
+天	I-pass
+广	I-pass
+场	L-pass
+到	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "dbdcf08e-67a6-4849-ad5e-98f82900627c"}
+经	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+去	O
+往	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "install_app", "id": "2452ba28-1353-4a6e-8440-5434fe4768a9"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+抖	B-app
+音	L-app
+不	O
+
+#	{"label": "to_position_pass_passby", "id": "e82e5833-5675-4e88-a59f-f1613dec64f2"}
+经	O
+过	O
+牛	B-pass
+仔	I-pass
+城	L-pass
+去	O
+往	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "to_position", "id": "6e9db6d0-086f-4c40-b949-13de0b7267e9"}
+去	O
+一	O
+趟	O
+小	B-position
+商	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "a778bce3-1bb7-41e5-9566-0224ff3d8a80"}
+给	O
+我	O
+看	O
+看	O
+去	O
+骑	B-position
+行	I-position
+城	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "c9f0705f-74ab-42c0-ba31-4e79aebddc99"}
+往	O
+七	B-position
+星	I-position
+街	L-position
+方	O
+向	O
+经	O
+过	O
+京	B-pass
+西	I-pass
+加	I-pass
+油	I-pass
+站	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "to_position", "id": "6fc3f235-7f6d-47c4-aec9-7c41864974c2"}
+开	O
+车	O
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "install_app", "id": "65211de8-c7d7-41fd-8a8f-a84faa46e458"}
+装	O
+个	O
+淘	B-app
+宝	L-app
+
+#	{"label": "transfer_app", "id": "6a8271a8-aa89-4f37-acfa-c1da9976f1fe"}
+帮	O
+我	O
+切	O
+到	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "shutdown_app", "id": "1858643b-0eda-445f-b84e-09a8f70f548b"}
+不	O
+想	O
+再	O
+看	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "9d47fb2a-a3fe-450d-b925-424f6c77a460"}
+开	O
+车	O
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "b4aef857-6712-4415-af95-8928c043719a"}
+给	O
+我	O
+看	O
+看	O
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position", "id": "404a06b9-79bf-40d3-8a64-030c7c611a6b"}
+开	O
+车	O
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+
+#	{"label": "to_position", "id": "247ec452-cc7c-4fa2-b844-5751c49d0862"}
+给	O
+我	O
+看	O
+看	O
+去	O
+北	B-position
+京	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "install_app", "id": "c06a50b8-9e1c-4da8-8d98-1894b6f6bd4d"}
+我	O
+要	O
+装	O
+淘	B-app
+宝	L-app
+
+#	{"label": "search_app", "id": "474a6c00-9970-4ff2-8c44-41acd17e03e5"}
+给	O
+我	O
+找	O
+抖	B-app
+音	L-app
+
+#	{"label": "turnon_app", "id": "b91ce691-27f8-4797-a562-ad58339eef76"}
+我	O
+想	O
+开	O
+启	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "c565688f-f7b6-4b51-b86a-7c2d03d22e50"}
+帮	O
+我	O
+切	O
+到	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "6758c29b-a638-46ba-bd2e-6858669a201a"}
+切	O
+成	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "to_position_pass_passby", "id": "bc5d85ce-ce6a-46e9-9dd3-a476575463d3"}
+我	O
+打	O
+算	O
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+
+#	{"label": "shutdown_app", "id": "7ced9a21-1fc3-4aa0-a4d5-58a0d600d3db"}
+不	O
+想	O
+再	O
+看	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+了	O
+
+#	{"label": "turnon_app", "id": "ce92457a-2ea3-4437-a7fe-f7342f21da75"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+头	B-app
+条	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "turnon_app", "id": "ea2c10f7-d915-4fe7-a1ce-79c6cb43eaaf"}
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "shutdown_app", "id": "c997e48e-a753-4ac6-b886-b03db4f8af03"}
+我	O
+不	O
+想	O
+再	O
+用	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+了	O
+。	O
+
+#	{"label": "to_position", "id": "e1680035-cad5-4006-9b54-8d1b591efb50"}
+往	O
+牛	B-position
+仔	I-position
+城	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position_pass_passby", "id": "a4216094-68b3-438c-be56-9753bd263bc4"}
+往	O
+牛	B-position
+仔	I-position
+城	L-position
+方	O
+向	O
+经	O
+过	O
+东	B-pass
+西	I-pass
+向	I-pass
+南	I-pass
+门	I-pass
+北	I-pass
+大	I-pass
+街	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "search_app", "id": "089c178d-909b-4fe3-b7f5-de63c16a0677"}
+查	O
+找	O
+抖	B-app
+音	L-app
+
+#	{"label": "search_app", "id": "74dbf2da-91a6-4fd7-9d76-cd84d392dcdc"}
+找	O
+找	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "install_app", "id": "692b35ab-24f8-4e32-a36a-854d7d4e3c0d"}
+装	O
+个	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position_pass_passby", "id": "0d7de603-9a7a-42d6-a653-53a8cdaa0483"}
+去	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+小	B-pass
+商	I-pass
+城	L-pass
+了	O
+
+#	{"label": "to_position", "id": "5f15c111-e71d-4a10-b0c3-a5ed840c107a"}
+往	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "install_app", "id": "3f528d19-afe4-4d7c-b0a5-089298cf54fd"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "search_app", "id": "1d1f7a9f-3fba-48d9-916b-1599bf876887"}
+给	O
+我	O
+找	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "to_position_pass_passby", "id": "ed011943-3c7d-4434-a059-52a6600a9e11"}
+经	O
+过	O
+小	B-pass
+商	I-pass
+城	L-pass
+去	O
+往	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+
+#	{"label": "install_app", "id": "8a154aac-d9ec-4e65-afb5-6a0daca6ae4c"}
+我	O
+要	O
+装	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "to_position_pass_passby", "id": "675e9c88-3828-4478-ba68-a9ef06f2317b"}
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+三	B-pass
+马	I-pass
+街	I-pass
+行	I-pass
+政	I-pass
+处	L-pass
+了	O
+
+#	{"label": "to_position", "id": "b090d5f6-6bfe-44f7-af18-0c098e911ba2"}
+开	O
+车	O
+去	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+
+#	{"label": "shutdown_app", "id": "e584527c-f323-4221-af7f-e0af9cda085b"}
+断	O
+开	O
+和	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "install_app", "id": "e39d74bc-03b5-4665-98b3-16f7e7f85b7f"}
+安	O
+装	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "search_app", "id": "56d58152-c42b-44e3-b4a5-ca1e62fae860"}
+搜	O
+索	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position_pass_passby", "id": "2b77c721-3cd0-461f-a1d2-df91ea8af478"}
+路	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+去	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "shutdown_app", "id": "02572d74-24c1-4210-91fd-64f0b0078c06"}
+断	O
+开	O
+和	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+的	O
+连	O
+接	O
+好	O
+不	O
+好	O
+啊	O
+
+#	{"label": "to_position", "id": "99a68d9a-c855-4627-9eed-f8b961d2556f"}
+去	O
+一	O
+趟	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+
+#	{"label": "shutdown_app", "id": "f3cbe0b0-d2e9-41c3-b5ea-941584c6a1ec"}
+不	O
+想	O
+再	O
+看	O
+抖	B-app
+音	L-app
+了	O
+
+#	{"label": "to_position", "id": "a4e0c23a-5399-4a45-b6c9-887d91d2a181"}
+我	O
+打	O
+算	O
+去	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "search_app", "id": "b92cdd1e-830f-4a43-8c68-04472e78331d"}
+有	O
+没	O
+有	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "search_app", "id": "ceceb522-bfe8-4623-a532-9b5767e9a093"}
+查	O
+找	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "shutdown_app", "id": "8484b7e8-89fb-4d17-a20d-7b8fe49e72e9"}
+把	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "turnon_app", "id": "bf5a3ab7-2329-436c-8ebb-4487e64ac8dc"}
+我	O
+想	O
+使	O
+用	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "fa6fa3cc-ba54-4e35-914d-2d7d524e594c"}
+开	O
+车	O
+去	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "to_position_pass_passby", "id": "396adfa9-3e20-4014-bbf5-0687c3778574"}
+开	O
+车	O
+去	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "transfer_app", "id": "f787f676-a48e-42ea-a6f3-779d74d1a56f"}
+切	O
+成	O
+淘	B-app
+宝	L-app
+
+#	{"label": "to_position", "id": "3eaa317e-2beb-429f-ba13-a5e022e1ddc0"}
+给	O
+我	O
+看	O
+看	O
+去	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "turnon_app", "id": "d05350ab-7b9c-4d2a-b9d7-b426bcb6512b"}
+我	O
+要	O
+进	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "search_app", "id": "0d02efc2-ccad-4515-80aa-952903911e11"}
+帮	O
+我	O
+找	O
+下	O
+抖	B-app
+音	L-app
+
+#	{"label": "search_app", "id": "36c5c5f5-9453-42b0-8c33-a42ad677d9f0"}
+帮	O
+我	O
+找	O
+下	O
+头	B-app
+条	L-app
+
+#	{"label": "shutdown_app", "id": "7b54702d-4301-4e17-893d-a9b804e2d28c"}
+我	O
+不	O
+想	O
+再	O
+用	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+了	O
+。	O
+
+#	{"label": "to_position_pass_passby", "id": "e4b6a520-4dc6-4ec5-ac58-70263c81e929"}
+开	O
+车	O
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "to_position", "id": "50141f82-7436-488e-930f-509fb58dc4ef"}
+开	O
+车	O
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "to_position_pass_passby", "id": "92b1fb45-729f-402f-a9ed-51f3d1181874"}
+开	O
+车	O
+去	O
+小	B-position
+商	I-position
+城	L-position
+
+#	{"label": "to_position_pass_passby", "id": "a4676b2e-3962-482c-9be1-a45bc652819f"}
+给	O
+我	O
+看	O
+看	O
+去	O
+七	B-position
+星	I-position
+街	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "transfer_app", "id": "a2d5955a-aab6-42b0-a39d-16370589d872"}
+帮	O
+我	O
+切	O
+到	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "install_app", "id": "8b4f62be-8cd8-45e4-b255-ba0d02ad580f"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "install_app", "id": "62490920-868c-4732-86d6-f199b7a9bdd4"}
+安	O
+装	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "shutdown_app", "id": "94cdedad-3b24-4a89-bf82-4f17e8441f99"}
+我	O
+想	O
+把	O
+抖	B-app
+音	L-app
+关	O
+上	O
+
+#	{"label": "to_position_pass_passby", "id": "72f5cfb1-47e1-4aca-9735-0e13b8dc326b"}
+往	O
+七	B-position
+星	I-position
+街	L-position
+方	O
+向	O
+经	O
+过	O
+星	B-pass
+光	I-pass
+小	I-pass
+路	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "turnon_app", "id": "3c0ab270-fc5b-4e25-8871-14c758bde390"}
+抖	B-app
+音	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "to_position", "id": "64c79786-bc25-4ac3-8dff-da911ad63a27"}
+我	O
+要	O
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "install_app", "id": "06d809dc-6c9e-4f13-9fd2-49ab3e5173b3"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "turnon_app", "id": "26bc147f-ea31-4db0-b9b1-7f096b752b34"}
+我	O
+想	O
+使	O
+用	O
+抖	B-app
+音	L-app
+了	O
+
+#	{"label": "turnon_app", "id": "c46a173e-9dba-4d41-8cd3-2b097a665cdf"}
+我	O
+要	O
+进	O
+头	B-app
+条	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "turnon_app", "id": "6f4f3ae4-25a8-4e35-b663-16b4eb07f150"}
+我	O
+要	O
+进	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "to_position", "id": "c13bc353-7fcb-455f-afc9-680de424fc13"}
+去	O
+一	O
+趟	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+
+#	{"label": "install_app", "id": "9332b605-75bf-45cb-9f07-c8f5023f94dd"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+不	O
+
+#	{"label": "to_position_pass_passby", "id": "315b33ad-4437-4860-948a-07579ee4d0fc"}
+去	O
+小	B-position
+商	I-position
+城	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+阳	B-pass
+光	I-pass
+甬	I-pass
+道	L-pass
+了	O
+
+#	{"label": "install_app", "id": "60d0a553-2160-4139-baa8-c1190a154f08"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+淘	B-app
+宝	L-app
+
+#	{"label": "to_position_pass_passby", "id": "7fc853eb-f812-48be-8b1c-8fc96e23b87e"}
+路	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "to_position", "id": "7835b9f3-6953-4cc0-aade-a08706665026"}
+我	O
+要	O
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+
+#	{"label": "search_app", "id": "cf13b603-674b-492c-96eb-63aeb5a6c612"}
+搜	O
+索	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "install_app", "id": "aee0dd04-6f8a-4e62-8820-dc2a3b901421"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+不	O
+
+#	{"label": "to_position", "id": "461b2d03-7ba8-46ff-baf7-013170bd69ee"}
+开	O
+车	O
+去	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+
+#	{"label": "to_position_pass_passby", "id": "6c7d00f6-2d33-47c7-ac4b-dca23b004722"}
+我	O
+打	O
+算	O
+去	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "8920e5ae-705d-47e1-b714-f93d400568a5"}
+给	O
+我	O
+看	O
+看	O
+去	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "search_app", "id": "9a26522e-5bc1-4113-bee6-4487f41701c9"}
+找	O
+找	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "to_position_pass_passby", "id": "24f0def2-3c43-4fe0-ad92-4a75289577d3"}
+我	O
+要	O
+经	O
+过	O
+政	B-pass
+府	I-pass
+大	I-pass
+街	L-pass
+到	O
+七	B-position
+星	I-position
+街	L-position
+去	O
+
+#	{"label": "search_app", "id": "5a52213b-997e-46a0-998e-94f48b48e476"}
+找	O
+找	O
+淘	B-app
+宝	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "shutdown_app", "id": "b26fbd18-a393-411d-9759-1eeb5c83cc35"}
+我	O
+不	O
+想	O
+再	O
+用	O
+抖	B-app
+音	L-app
+了	O
+。	O
+
+#	{"label": "install_app", "id": "d14a7d14-40cf-480a-945a-c086d5cffc58"}
+装	O
+个	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "shutdown_app", "id": "9cbfd901-13e5-4ba3-a50c-4d8cd41092e2"}
+把	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "shutdown_app", "id": "2ad51d53-38c1-47f6-97fc-0dd8823cdf30"}
+把	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position_pass_passby", "id": "2a12e362-eb95-4d0f-992c-c9309fb3b6b5"}
+我	O
+要	O
+经	O
+过	O
+军	B-pass
+情	I-pass
+七	I-pass
+处	L-pass
+到	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+去	O
+
+#	{"label": "install_app", "id": "cf90e5a7-eb9c-42ea-bb95-2ada281c7f5c"}
+装	O
+个	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "shutdown_app", "id": "1ba2db3d-b3db-42c0-8a71-49311c6e2a71"}
+不	O
+想	O
+再	O
+看	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+了	O
+
+#	{"label": "turnon_app", "id": "b86c4fde-316e-45dd-b56d-b208d44fbe25"}
+我	O
+要	O
+进	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "install_app", "id": "e06ce582-2972-4c61-9038-b4c0eb767c03"}
+安	O
+装	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "to_position", "id": "22506c86-0fe7-49d4-ad6f-d9525c57ce23"}
+去	O
+一	O
+趟	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "to_position_pass_passby", "id": "5dbf0a21-4a71-4267-bcd6-863caf4b7511"}
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+步	B-pass
+行	I-pass
+街	L-pass
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "50d9dcf4-a729-4b9e-8d1c-0f611b9e723d"}
+给	O
+我	O
+看	O
+看	O
+去	O
+北	B-position
+京	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "transfer_app", "id": "bf734053-bc88-4543-8431-be1bf144ea13"}
+帮	O
+我	O
+回	O
+到	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "search_app", "id": "76097e23-d135-464b-a3fd-98ad76351472"}
+有	O
+没	O
+有	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "turnon_app", "id": "76927b8d-4b9d-4fe0-b0b3-5d6a1c2ad4d7"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "shutdown_app", "id": "b0331ba5-019b-4e06-a278-df6c1bb125f1"}
+把	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "turnon_app", "id": "a35eb463-43d8-4837-ac61-4e5d732aec04"}
+我	O
+要	O
+进	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "install_app", "id": "0165ea02-11ff-4a78-b8e4-8ca0ec5698b7"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+头	B-app
+条	L-app
+
+#	{"label": "shutdown_app", "id": "6e103a0f-4edd-4d85-ac10-a3d0d03747f9"}
+把	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "transfer_app", "id": "757dcf53-f709-4875-96f7-4cb24cef9573"}
+转	O
+换	O
+为	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "66319e98-878f-4231-b898-6fb577e65c3a"}
+帮	O
+我	O
+切	O
+到	O
+淘	B-app
+宝	L-app
+界	O
+面	O
+
+#	{"label": "search_app", "id": "5ead0e9f-e5ae-4acb-ba74-2a5c114e77d9"}
+有	O
+没	O
+有	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+，	O
+找	O
+下	O
+
+#	{"label": "to_position_pass_passby", "id": "131cd2a4-8e67-4643-8850-e0a083978885"}
+经	O
+过	O
+小	B-pass
+商	I-pass
+城	L-pass
+去	O
+往	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "cdd32497-5a1a-478d-bb14-f1de624c5203"}
+往	O
+步	B-position
+行	I-position
+街	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position", "id": "8ab63601-fcde-4292-8ac8-ba8c21f717b7"}
+给	O
+我	O
+看	O
+看	O
+去	O
+小	B-position
+商	I-position
+城	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "search_app", "id": "ab60b7a3-a527-4d7b-98cc-de2c83ac5101"}
+给	O
+我	O
+找	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "search_app", "id": "bf21cb1f-6d2a-4c50-83b7-1dcb95ecceca"}
+帮	O
+我	O
+找	O
+下	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "shutdown_app", "id": "c0efd823-dca1-4b5a-8623-6d1168f40c1b"}
+我	O
+想	O
+把	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+关	O
+上	O
+
+#	{"label": "to_position", "id": "0187b34c-cca7-4373-9480-6943f0b59ec4"}
+我	O
+要	O
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "install_app", "id": "f4fd647b-acec-4608-a1d6-157ef9791872"}
+我	O
+要	O
+装	O
+头	B-app
+条	L-app
+
+#	{"label": "shutdown_app", "id": "fec8834b-3a5b-49d8-bb6d-dfac9671cfd2"}
+把	O
+抖	B-app
+音	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position", "id": "5d05b19c-c306-41d5-9ded-e8dd022b39ab"}
+我	O
+打	O
+算	O
+去	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "shutdown_app", "id": "d4a45000-2550-4e3b-9ef1-c10c678ec44f"}
+我	O
+不	O
+想	O
+再	O
+用	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+了	O
+。	O
+
+#	{"label": "turnon_app", "id": "117cf0be-5e4e-4e3c-b210-1450adae437b"}
+我	O
+要	O
+进	O
+淘	B-app
+宝	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "to_position_pass_passby", "id": "d544901a-20ab-4b02-ad0d-d39cfad4a441"}
+我	O
+打	O
+算	O
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "shutdown_app", "id": "30d26201-530c-4ad9-ba39-0d1ab1d68cae"}
+我	O
+不	O
+想	O
+再	O
+用	O
+淘	B-app
+宝	L-app
+了	O
+。	O
+
+#	{"label": "to_position", "id": "d2e09bf2-68c9-4544-b182-dcefbde74a52"}
+我	O
+要	O
+去	O
+小	B-position
+商	I-position
+城	L-position
+
+#	{"label": "to_position", "id": "3130a29f-7c43-4abd-8cec-0a8d253f44f6"}
+我	O
+要	O
+去	O
+政	B-position
+府	I-position
+大	I-position
+街	L-position
+
+#	{"label": "turnon_app", "id": "24fc9d5a-09d6-47ba-a3cf-222f742e69f5"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+抖	B-app
+音	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "transfer_app", "id": "08ba016e-ab36-4845-88c1-846dc34aecf8"}
+帮	O
+我	O
+切	O
+到	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "to_position_pass_passby", "id": "0332c1ac-d29e-4e9b-8dc3-7a512dc2457e"}
+经	O
+过	O
+阳	B-pass
+光	I-pass
+甬	I-pass
+道	L-pass
+去	O
+往	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+
+#	{"label": "shutdown_app", "id": "56510cba-ecc0-46a5-90fa-ddad51740c76"}
+把	O
+淘	B-app
+宝	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "to_position_pass_passby", "id": "e0e347a7-c343-407e-9b1d-c0e5c347b3b7"}
+我	O
+要	O
+经	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+到	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+去	O
+
+#	{"label": "transfer_app", "id": "b2b59d2a-bb80-4ac8-b222-5cf4cae13c0b"}
+帮	O
+我	O
+回	O
+到	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "to_position", "id": "ba11cc2f-8af4-4fd9-8c58-1984062468b1"}
+我	O
+打	O
+算	O
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "transfer_app", "id": "5d3cb7e7-9b82-479e-8da6-f740ad27e3a2"}
+转	O
+换	O
+为	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+
+#	{"label": "turnon_app", "id": "fdee601a-a982-4875-8d01-c3f1028e1aa0"}
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "transfer_app", "id": "d824a810-9559-472b-8f04-afdc87c13d9a"}
+转	O
+换	O
+为	O
+淘	B-app
+宝	L-app
+界	O
+面	O
+
+#	{"label": "search_app", "id": "09841eef-7a63-4ff1-8aed-61d0cff10fc0"}
+搜	O
+索	O
+抖	B-app
+音	L-app
+
+#	{"label": "to_position", "id": "4175f353-e404-40fa-8a69-35677e1ed44c"}
+我	O
+要	O
+去	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "install_app", "id": "afc28e42-a303-4630-9ecf-b4687154ba84"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position", "id": "9107545d-2281-40dd-8159-f819920ec0ef"}
+我	O
+要	O
+去	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "to_position", "id": "daff8f70-bf46-4869-af65-c569ed7e5d08"}
+去	O
+一	O
+趟	O
+牛	B-position
+仔	I-position
+城	L-position
+
+#	{"label": "search_app", "id": "e19cbe39-dd02-45ac-8594-825b04e4e071"}
+帮	O
+我	O
+找	O
+下	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "turnon_app", "id": "ff2857d1-6f8a-4bc4-8769-970b3d135b5f"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "search_app", "id": "ace0b8c2-fcf2-4453-8252-bfef70f639d6"}
+帮	O
+我	O
+找	O
+下	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "to_position", "id": "75415e4d-4cce-4c17-af5b-c6fac44acfb8"}
+给	O
+我	O
+看	O
+看	O
+去	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "shutdown_app", "id": "f1013c79-9789-490c-85fe-fcfd2d70e467"}
+我	O
+想	O
+把	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+关	O
+上	O
+
+#	{"label": "shutdown_app", "id": "f7477b7e-c5a6-4bdf-ab67-133a73410c96"}
+把	O
+淘	B-app
+宝	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "to_position", "id": "c7fc4404-2348-42b5-929d-09b30c67a917"}
+去	O
+一	O
+趟	O
+北	B-position
+京	L-position
+
+#	{"label": "search_app", "id": "d48bcd66-3891-42e1-b6ff-624f6a20272b"}
+找	O
+找	O
+抖	B-app
+音	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "to_position", "id": "d98a1dff-7b24-486c-bb7a-f9a86d496a11"}
+我	O
+打	O
+算	O
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+
+#	{"label": "install_app", "id": "3c81c953-8981-4c51-85d2-18a4e80dc0f2"}
+能	O
+帮	O
+我	O
+装	O
+个	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+不	O
+
+#	{"label": "to_position_pass_passby", "id": "7f19a926-a3c6-4f43-9618-61ebe9b47897"}
+给	O
+我	O
+看	O
+看	O
+去	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "c907dad8-697b-4287-be89-bf079a6a153e"}
+开	O
+车	O
+去	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+
+#	{"label": "turnon_app", "id": "3ff45561-fb34-4736-8274-44c99dac83d3"}
+我	O
+想	O
+使	O
+用	O
+头	B-app
+条	L-app
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "ae16cf30-f9d0-49cd-8786-b7452fbe4459"}
+给	O
+我	O
+看	O
+看	O
+去	O
+步	B-position
+行	I-position
+街	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "install_app", "id": "4ae7f829-c4d4-42df-b385-0e4f458e08a9"}
+安	O
+装	O
+抖	B-app
+音	L-app
+
+#	{"label": "turnon_app", "id": "818b8f0b-46da-419a-ab7c-fc3798b55345"}
+头	B-app
+条	L-app
+能	O
+帮	O
+我	O
+开	O
+开	O
+吗	O
+？	O
+
+#	{"label": "to_position_pass_passby", "id": "229fe22f-a3e2-4d2a-b813-09c8d7efdcf9"}
+往	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+方	O
+向	O
+经	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "shutdown_app", "id": "c11fef7c-b04a-4483-9fca-716a28e702c4"}
+我	O
+不	O
+想	O
+再	O
+用	O
+头	B-app
+条	L-app
+了	O
+。	O
+
+#	{"label": "to_position_pass_passby", "id": "d5126ab1-b0ef-4cc1-a101-e5bcf914b2d8"}
+往	O
+骑	B-position
+行	I-position
+城	L-position
+方	O
+向	O
+经	O
+过	O
+小	B-pass
+商	I-pass
+城	L-pass
+怎	O
+么	O
+走	O
+
+#	{"label": "to_position_pass_passby", "id": "e3a4cea2-6573-4fbe-a7c3-5e17647c4aa5"}
+开	O
+车	O
+去	O
+七	B-position
+星	I-position
+街	L-position
+
+#	{"label": "search_app", "id": "b1259d16-afd9-425d-bbc5-9d2413329645"}
+找	O
+找	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+这	O
+个	O
+应	O
+用	O
+
+#	{"label": "transfer_app", "id": "30f8bd82-2e72-43a4-8e2e-726f28b2b9d4"}
+转	O
+换	O
+为	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+界	O
+面	O
+
+#	{"label": "to_position_pass_passby", "id": "99847184-57be-4201-b8db-db37a984d95b"}
+经	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+去	O
+往	O
+南	B-position
+北	I-position
+城	I-position
+行	I-position
+政	I-position
+中	I-position
+心	L-position
+
+#	{"label": "transfer_app", "id": "b5a11110-9c05-4e35-b5fb-44c61aa6710a"}
+切	O
+成	O
+头	B-app
+条	L-app
+
+#	{"label": "turnon_app", "id": "ce293540-702e-40a2-9145-7f7667d0968d"}
+连	O
+上	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "to_position", "id": "877e1a50-2733-4f89-8b19-53a861366d21"}
+我	O
+打	O
+算	O
+去	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "transfer_app", "id": "dde50a01-9bb5-4201-96c5-79d3af5c6367"}
+切	O
+成	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+
+#	{"label": "search_app", "id": "cf6896eb-a861-4f70-b590-e2d879da704a"}
+帮	O
+我	O
+找	O
+下	O
+淘	B-app
+宝	L-app
+
+#	{"label": "to_position_pass_passby", "id": "57483779-247d-4ba9-b8a1-cf40c966dc8a"}
+经	O
+过	O
+云	B-pass
+锦	I-pass
+路	L-pass
+去	O
+往	O
+天	B-position
+天	I-position
+广	I-position
+场	L-position
+
+#	{"label": "to_position_pass_passby", "id": "49268a5a-9354-4412-bd75-24c8f81876bf"}
+我	O
+要	O
+经	O
+过	O
+星	B-pass
+光	I-pass
+小	I-pass
+路	L-pass
+到	O
+小	B-position
+商	I-position
+城	L-position
+去	O
+
+#	{"label": "to_position_pass_passby", "id": "30f54901-6995-439e-9a37-3d71c5883c9d"}
+我	O
+打	O
+算	O
+去	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+
+#	{"label": "shutdown_app", "id": "71abe3e4-a5d1-47aa-aa97-3ee34d938406"}
+把	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+给	O
+我	O
+关	O
+闭	O
+
+#	{"label": "install_app", "id": "9e0ef2a5-a6f5-414e-8df3-5e241f669551"}
+给	O
+我	O
+安	O
+装	O
+一	O
+下	O
+抖	B-app
+音	L-app
+
+#	{"label": "to_position_pass_passby", "id": "d5aa64fb-d2ea-40b4-a75d-7262ea1dab73"}
+我	O
+要	O
+经	O
+过	O
+阳	B-pass
+光	I-pass
+甬	I-pass
+道	L-pass
+到	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+去	O
+
+#	{"label": "install_app", "id": "a0f0b4c4-8312-49ca-96e9-952021cba435"}
+我	O
+要	O
+装	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+
+#	{"label": "turnon_app", "id": "c678956e-1a9e-491a-8bdc-99d137b0ba2e"}
+我	O
+要	O
+进	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "to_position_pass_passby", "id": "cadabeb4-acd3-4c21-a878-c24fdeb22d13"}
+去	O
+上	B-position
+海	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+南	B-pass
+北	I-pass
+城	I-pass
+行	I-pass
+政	I-pass
+中	I-pass
+心	L-pass
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "87193f95-f5bf-4569-82a0-3d69b773a0ea"}
+路	O
+过	O
+七	B-pass
+星	I-pass
+街	L-pass
+去	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+
+#	{"label": "to_position", "id": "f366634c-830f-40b1-a241-3ce00aa7906e"}
+去	O
+一	O
+趟	O
+万	B-position
+里	I-position
+胡	I-position
+同	L-position
+
+#	{"label": "to_position_pass_passby", "id": "933c3ace-6cec-461f-a8e0-5b77799ebd69"}
+去	O
+骑	B-position
+行	I-position
+城	L-position
+吧	O
+，	O
+要	O
+路	O
+过	O
+牛	B-pass
+仔	I-pass
+城	L-pass
+了	O
+
+#	{"label": "turnon_app", "id": "cd91d0c7-b93f-4035-ba89-0be8b6643478"}
+我	O
+想	O
+使	O
+用	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+了	O
+
+#	{"label": "to_position_pass_passby", "id": "24138c99-24be-4518-8b81-8713af595d6b"}
+经	O
+过	O
+骑	B-pass
+行	I-pass
+城	L-pass
+去	O
+往	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+
+#	{"label": "to_position_pass_passby", "id": "c86b1330-39a9-4df9-8925-db774e2da2e2"}
+路	O
+过	O
+南	B-pass
+北	I-pass
+街	I-pass
+西	I-pass
+六	I-pass
+环	I-pass
+东	I-pass
+口	L-pass
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "to_position_pass_passby", "id": "37676daa-68e7-4830-853f-f4dc7b06373e"}
+我	O
+打	O
+算	O
+去	O
+上	B-position
+海	L-position
+
+#	{"label": "turnon_app", "id": "37450e26-546d-436e-bebd-7af7e8f3a032"}
+连	O
+上	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "to_position", "id": "d9caa9df-2933-49a1-a729-0a5ae1f9e328"}
+开	O
+车	O
+去	O
+北	B-position
+京	L-position
+
+#	{"label": "to_position", "id": "6fb2689b-7a10-44a8-aebb-ed7edce57e41"}
+我	O
+打	O
+算	O
+去	O
+云	B-position
+锦	I-position
+路	L-position
+
+#	{"label": "shutdown_app", "id": "536b3747-32e1-4476-baba-248944775733"}
+不	O
+想	O
+再	O
+看	O
+淘	B-app
+宝	L-app
+了	O
+
+#	{"label": "to_position", "id": "f1602179-252a-4268-afb0-99011e1da059"}
+往	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "transfer_app", "id": "cc4d58d3-3ebe-49cc-8173-2017be420cdb"}
+帮	O
+我	O
+回	O
+到	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+界	O
+面	O
+
+#	{"label": "install_app", "id": "3794f46b-20f5-4673-8334-e7dc31a1361b"}
+安	O
+装	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "11a2de92-cd1f-4cbb-a073-8628aa7f8a62"}
+帮	O
+我	O
+切	O
+到	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+界	O
+面	O
+
+#	{"label": "shutdown_app", "id": "6fbb3cee-7605-47bb-9dd7-a9093962476d"}
+我	O
+想	O
+把	O
+淘	B-app
+宝	L-app
+关	O
+上	O
+
+#	{"label": "to_position", "id": "308728a6-0daa-40aa-b04e-cc2f0960da38"}
+开	O
+车	O
+去	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "search_app", "id": "cf46b091-f52d-463e-873b-3b9b4dc8f024"}
+查	O
+找	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "turnon_app", "id": "ed5b59a0-ae58-4c53-98e7-1d1ecdde4117"}
+连	O
+上	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+给	O
+我	O
+用	O
+用	O
+
+#	{"label": "shutdown_app", "id": "344c4259-383b-4ca7-bad0-1ccf0bdcbfa4"}
+我	O
+不	O
+想	O
+再	O
+用	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+了	O
+。	O
+
+#	{"label": "to_position", "id": "b9f25516-95e6-466c-9f7e-a720a2a39e10"}
+我	O
+打	O
+算	O
+去	O
+星	B-position
+光	I-position
+小	I-position
+路	L-position
+
+#	{"label": "install_app", "id": "fa0b8818-a015-4d71-8d98-d9c62a094195"}
+安	O
+装	O
+今	B-app
+日	I-app
+头	I-app
+条	L-app
+
+#	{"label": "search_app", "id": "208226ff-249a-4e57-a616-1e462d507d40"}
+搜	O
+索	O
+头	B-app
+条	L-app
+
+#	{"label": "to_position_pass_passby", "id": "9c80cd16-3439-4c2b-892f-0a5c63d75938"}
+我	O
+打	O
+算	O
+去	O
+阳	B-position
+光	I-position
+甬	I-position
+道	L-position
+
+#	{"label": "transfer_app", "id": "ec67cedf-191a-4156-839b-adb956b2d8b3"}
+切	O
+换	O
+到	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+界	O
+面	O
+。	O
+
+#	{"label": "shutdown_app", "id": "1dbe3e20-5636-4e58-8f25-175607886140"}
+把	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+给	O
+我	O
+关	O
+掉	O
+
+#	{"label": "to_position_pass_passby", "id": "ab10184f-dedc-4eac-99af-4a8ae1faf275"}
+路	O
+过	O
+政	B-pass
+府	I-pass
+大	I-pass
+街	L-pass
+去	O
+军	B-position
+情	I-position
+七	I-position
+处	L-position
+
+#	{"label": "install_app", "id": "478cacb9-8214-4377-9f37-e47fd2002406"}
+安	O
+装	O
+头	B-app
+条	L-app
+
+#	{"label": "to_position", "id": "eb4e1ff5-7195-4c8e-9372-188711608c67"}
+往	O
+西	B-position
+马	I-position
+路	I-position
+派	I-position
+出	I-position
+所	L-position
+那	O
+边	O
+去	O
+看	O
+看	O
+
+#	{"label": "to_position", "id": "a26bf7db-a32c-42bd-81c2-75be43c3a360"}
+给	O
+我	O
+看	O
+看	O
+去	O
+上	B-position
+海	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "search_app", "id": "a009b85b-9f15-45e3-b5e2-1821cee56845"}
+查	O
+找	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "to_position", "id": "6d53b0e4-61a2-405d-b9d6-750b12a52725"}
+给	O
+我	O
+看	O
+看	O
+去	O
+京	B-position
+西	I-position
+加	I-position
+油	I-position
+站	L-position
+怎	O
+么	O
+去	O
+
+#	{"label": "install_app", "id": "b31c8f02-93e2-4e51-854f-140ffcea96d6"}
+我	O
+要	O
+装	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+
+#	{"label": "to_position_pass_passby", "id": "7cbf3049-f316-4397-b80e-72a58c554b75"}
+开	O
+车	O
+去	O
+骑	B-position
+行	I-position
+城	L-position
+
+#	{"label": "to_position_pass_passby", "id": "0c6fa504-4965-4e94-96e2-fa2b0e151870"}
+我	O
+打	O
+算	O
+去	O
+步	B-position
+行	I-position
+街	L-position
+
+#	{"label": "turnon_app", "id": "c7f9579d-2068-40e4-a672-b1445efee3b5"}
+拜	O
+托	O
+你	O
+让	O
+我	O
+用	O
+用	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+可	O
+以	O
+吗	O
+？	O
+
+#	{"label": "to_position", "id": "98b6b5b7-7a86-4689-aeeb-d3b6c3615bc8"}
+开	O
+车	O
+去	O
+小	B-position
+商	I-position
+城	L-position
+
+#	{"label": "search_app", "id": "305f6525-abd9-439e-a108-02fbd48929b8"}
+搜	O
+索	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "turnon_app", "id": "e6e2af58-fb45-4b40-883b-d556c2a68d8b"}
+我	O
+想	O
+开	O
+启	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "turnon_app", "id": "20bf0402-3dd2-4316-a8ed-ea5e14e7266e"}
+我	O
+要	O
+进	O
+抖	B-app
+音	L-app
+看	O
+点	O
+好	O
+东	O
+西	O
+
+#	{"label": "turnon_app", "id": "ee0a9ba3-bf8f-4a1a-af59-89ede0721b06"}
+我	O
+想	O
+使	O
+用	O
+腾	B-app
+讯	I-app
+音	I-app
+乐	L-app
+了	O
+
+#	{"label": "search_app", "id": "f48a25d5-24c3-4e57-a7eb-2f9624b01efd"}
+有	O
+没	O
+有	O
+f	B-app
+a	I-app
+c	I-app
+e	I-app
+b	I-app
+o	I-app
+o	I-app
+k	L-app
+，	O
+找	O
+下	O
+
