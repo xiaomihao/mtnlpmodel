@@ -56,7 +56,7 @@ vi configure.yaml
    # 在train.py中可根据实际权重参数存放位置修改model_weights_path
    # train.py中recommend_freeze_list的层为冻结层，不参与训练更新，可自行配置。
 ```
-######模型选择
+###### 模型选择
 ```
 vi configure.yaml 
 
