@@ -46,6 +46,7 @@ vi configure.yaml
 
 # finetune=false 
    # 以当前configure配置从头训练模型，模型参数随机初始化
+   # 从头开始训练模型
 ```
 ##### fine-tuning
 ```
