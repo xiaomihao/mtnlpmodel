@@ -5,10 +5,10 @@ from tf_crf_layer.loss import ConditionalRandomFieldLoss
 from tf_crf_layer.metrics import SequenceCorrectness
 from seq2annotation.utils import create_dir_if_needed, create_file_dir_if_needed, create_or_rm_dir_if_needed
 # tf.enable_eager_execution()
-from mtnlpmodel.utils.io_utils import (_read_configure,
-                                       ConverterForMTRequest,
-                                       ConverterForMTResponse_VirtualPad,
-                                       mtinput_export_as_deliverable_model,)
+from mtnlpmodel.utils.deliverablemodel_util import (_read_configure,
+                                                    ConverterForMTRequest,
+                                                    ConverterForMTResponse_VirtualPad,
+                                                    mtinput_export_as_deliverable_model, )
 
 sys.path.append('.')
 sys.path.append('..')

@@ -1,10 +1,10 @@
 # Data source
 data_source_scheme: local
 input_mode: "multi"
-data: "C:\\Users\\liang.mi\\Desktop\\new_train_test\\data.conllx"
-ner_data: "C:\\Users\\liang.mi\\Desktop\\new_train_test\\ner_data.conllx"
-cls_data: "C:\\Users\\liang.mi\\Desktop\\new_train_test\\cls_data.conllx"
-vocabulary_file: #"C:\\Users\\liang.mi\\Desktop\\new_train_test\\test_char.txt"
+data: "./data/data.conllx"
+ner_data: "./data/ner_data.conllx"
+cls_data: "./data/cls_data.conllx"
+vocabulary_file: #"./data/unicode_char_list.txt"
 test_ratio: 0.1
 shuffle_pool_size: 1000
 

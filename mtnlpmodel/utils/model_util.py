@@ -127,16 +127,32 @@ def Discriminator_new(onetask_output_shape, output_dtype='int32'):
     return Model(inputs=onetask_output, outputs=onetask_output, name='Discriminator')
 
 
-def get_ner_cls_output_tensor(ner_cls_layer, mapping_size=5):
+def get_ner_cls_output_tensor_merge_embedding(mapping_size=5):
     ''' get ner branch's classification results, output is a Tensor.
     '''
-    from tensorflow.python.ops import math_ops
-    cls_index_tensor = math_ops.cast(tf.keras.backend.argmax(ner_cls_layer, axis=-1), 'int32')
-    cls_index_tensor = tf.expand_dims(cls_index_tensor, -1)
-    # print_op = tf.print(cls_index_tensor)
-    # with tf.control_dependencies([print_op]):
-    cls_index_tensor = tf.multiply(cls_index_tensor, tf.ones((1, mapping_size), dtype='int32'))
-    return cls_index_tensor
+    def get_tensor(ner_cls_layer):
+        from tensorflow.python.ops import math_ops
+        cls_index_tensor = math_ops.cast(tf.keras.backend.argmax(ner_cls_layer, axis=-1), 'int32')
+        cls_index_tensor = tf.expand_dims(cls_index_tensor, -1)
+        # print_op = tf.print(cls_index_tensor)
+        # with tf.control_dependencies([print_op]):
+        cls_index_tensor = tf.multiply(cls_index_tensor, tf.ones((1, mapping_size), dtype='int32'))
+        return cls_index_tensor
+    return get_tensor
+
+
+def get_ner_cls_output_tensor_merge_input(mapping_size=5, **kwargs):
+    def get_tensor(ner_cls_layer):
+        import tensorflow as tf
+        from tensorflow.python.ops import math_ops
+        vocab_size = kwargs['vocab_size']
+        label_size = kwargs['label_size']
+        charlist_offset = tf.constant(vocab_size - label_size, dtype='int32')
+        cls_index_tensor = tf.add(math_ops.cast(tf.keras.backend.argmax(ner_cls_layer, axis=-1), 'int32'), charlist_offset)
+        cls_index_tensor = tf.expand_dims(cls_index_tensor, -1)
+        cls_index_tensor = tf.multiply(cls_index_tensor, tf.ones((1, mapping_size), dtype='int32'))
+        return cls_index_tensor
+    return get_tensor
 
 
 # Vitual Embedding

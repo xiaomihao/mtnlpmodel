@@ -34,27 +34,29 @@ def cls_branch(arcloss_param, output_dims, feature_extractor, cls_emb_layer, ner
                 ner_cls_layer = cls_layer(ner_cls_vec_layer)
             else:
                 ner_cls_layer = None
-    else:  # for softmax loss
+    else:   # for softmax loss
         with tf.keras.backend.name_scope("CLS_branch"):
             # cls branch
             cls_feature_layer = feature_extractor(cls_emb_layer)
             cls_flat_lstm = Flatten()(cls_feature_layer)
             cls_flat = Dropout(0.25)(cls_flat_lstm)
-            cls_dense = Dense(output_dims, activation='relu', name=outputlayer_name)
+            cls_dense = Dense(output_dims, activation='softmax', name=outputlayer_name)
             cls_output = cls_dense(cls_flat)
             # ner cls branch
-            if ner_emb_layer:
+            if ner_emb_layer is not None:
                 ner_cls_feature_layer = feature_extractor(ner_emb_layer)
                 ner_cls_flat_lstm = Flatten()(ner_cls_feature_layer)
                 ner_cls_layer = cls_dense(ner_cls_flat_lstm)
             else:
                 ner_cls_layer = None
+
     return ner_cls_layer, cls_output
 
 
 
 def build_model(model_choice, **hyperparams):
-    from mtnlpmodel.utils.model_util import get_ner_cls_output_tensor
+    from mtnlpmodel.utils.model_util import (get_ner_cls_output_tensor_merge_embedding,
+                                             get_ner_cls_output_tensor_merge_input)
     # get hyperparams
     EMBED_DIM = hyperparams['EMBED_DIM']
     CRF_PARAMS = hyperparams['CRF_PARAMS']
@@ -71,7 +73,7 @@ def build_model(model_choice, **hyperparams):
     cls_input_layer = Input(shape=(input_length,), dtype='int32', name='cls_input')
 
     # encoder
-    if model_choice=='VIRTUAL_EMBEDDING': # cls_out embedding merged to ner_input_embedding as virtual embedding
+    if model_choice=='VIRTUAL_EMBEDDING':   # cls_out embedding merged to ner_input_embedding as virtual embedding
         from mtnlpmodel.utils.model_util import VirtualEmbedding, Discriminator_new
         with tf.keras.backend.name_scope("Encoder"):
             embedding_layer_vocab = Embedding(vocab_size,
@@ -90,6 +92,9 @@ def build_model(model_choice, **hyperparams):
 
             ner_embedding = embedding_layer_vocab(ner_input_layer)
             cls_embedding = embedding_layer_vocab(cls_input_layer)
+            
+            ner_embedding = Dropout(0.15)(ner_embedding)    # just like random erase
+            cls_embedding = Dropout(0.15)(cls_embedding)
 
         with tf.keras.backend.name_scope("Feature_extractor"):
             for bilstm_config in BiLSTM_STACK_CONFIG:
@@ -101,8 +106,8 @@ def build_model(model_choice, **hyperparams):
                                                label_size, bilstm_extrator, 
                                                cls_embedding, ner_embedding,
                                                outputlayer_name='cls')
-        ner_cls_output_shape = get_ner_cls_output_tensor(ner_cls_layer, CLS2NER_KEYWORD_LEN).shape
-        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor, ner_cls_output_shape)(ner_cls_layer)
+        ner_cls_output_shape = get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN)(ner_cls_layer).shape
+        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN), ner_cls_output_shape)(ner_cls_layer)
 
         # classification output will be used as a keyword adding to input of NER
         discriminator = Discriminator_new(onetask_output_shape=(CLS2NER_KEYWORD_LEN,),
@@ -112,9 +117,9 @@ def build_model(model_choice, **hyperparams):
         ner_merged_embedding = tf.keras.layers.concatenate([ner_virtual_embedding, ner_embedding], axis=1)
         ner_branch_embedding = ner_merged_embedding
 
-    elif model_choice=='CLS2NER_INPUT':  # cls_out merged to ner_input as virtual keywords
+    elif model_choice=='CLS2NER_INPUT':   # cls_out merged to ner_input as virtual keywords
         from mtnlpmodel.utils.model_util import Discriminator
-        from mtnlpmodel.trainer.utils import build_vacablookuper_from_list
+        from mtnlpmodel.utils.input_process_util import build_vacablookuper_from_list
         vocabs = list(hyperparams['vocabulary_lookuper'].inverse_index_table.values())
         cls_labels = list(hyperparams['cls_label_lookuper'].inverse_index_table.values())
         vocabs.extend(cls_labels)
@@ -130,6 +135,9 @@ def build_model(model_choice, **hyperparams):
             ner_embedding = embedding_layer(ner_input_layer)
             cls_embedding = embedding_layer(cls_input_layer)
 
+            ner_embedding = Dropout(0.15)(ner_embedding)  # just like random erase
+            cls_embedding = Dropout(0.15)(cls_embedding)
+
         with tf.keras.backend.name_scope("Feature_extractor"):
             for bilstm_config in BiLSTM_STACK_CONFIG:
                 biLSTM = Bidirectional(LSTM(return_sequences=True, **bilstm_config, name='biLSTM'))
@@ -140,8 +148,14 @@ def build_model(model_choice, **hyperparams):
                                                label_size, bilstm_extrator, 
                                                cls_embedding, ner_embedding,
                                                outputlayer_name='cls')
-        ner_cls_output_shape = get_ner_cls_output_tensor(ner_cls_layer, CLS2NER_KEYWORD_LEN).shape
-        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor, ner_cls_output_shape)(ner_cls_layer)
+        ner_cls_output_shape = get_ner_cls_output_tensor_merge_input(CLS2NER_KEYWORD_LEN,
+                                                                     **{"vocab_size":vocab_size,
+                                                                        "label_size":label_size})(ner_cls_layer).shape
+
+        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor_merge_input(
+                                         CLS2NER_KEYWORD_LEN,
+                                         **{"vocab_size": vocab_size, "label_size": label_size}),
+                                      ner_cls_output_shape)(ner_cls_layer)
 
         # classification output will be used as a keyword adding to input of NER
         discriminator = Discriminator(ner_input_layer, onetask_output_shape=(CLS2NER_KEYWORD_LEN,),
@@ -151,19 +165,17 @@ def build_model(model_choice, **hyperparams):
 
     else: # task independent
         with tf.keras.backend.name_scope("Encoder"):
-            ner_embedding = Embedding(vocab_size,
-                                      EMBED_DIM,
-                                      mask_zero=True,
-                                      input_length=input_length,
-                                      name='embedding'
-                                      )(ner_input_layer)
+            embedding_layer = Embedding(vocab_size,
+                                        EMBED_DIM,
+                                        mask_zero=True,
+                                        input_length=input_length,
+                                        )
 
-            cls_embedding = Embedding(vocab_size,
-                                      EMBED_DIM,
-                                      mask_zero=True,
-                                      input_length=input_length,
-                                      name='embedding'
-                                      )(cls_input_layer)
+            ner_embedding = embedding_layer(ner_input_layer)
+            cls_embedding = embedding_layer(cls_input_layer)
+
+            ner_embedding = Dropout(0.15)(ner_embedding)    # just like random erase
+            cls_embedding = Dropout(0.15)(cls_embedding)
 
         with tf.keras.backend.name_scope("Feature_extractor"):
             for bilstm_config in BiLSTM_STACK_CONFIG:
@@ -172,9 +184,8 @@ def build_model(model_choice, **hyperparams):
 
         # classification branch
         _, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                               label_size, bilstm_extrator, 
-                                               cls_embedding, ner_embedding,
-                                               outputlayer_name='cls')
+                                   label_size, bilstm_extrator,
+                                   cls_embedding, outputlayer_name='cls')
         ner_branch_embedding = ner_embedding
 
     # NER branch
@@ -194,7 +205,8 @@ def build_model(model_choice, **hyperparams):
 
 
 def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams):
-    from mtnlpmodel.utils.model_util import get_ner_cls_output_tensor
+    from mtnlpmodel.utils.model_util import (get_ner_cls_output_tensor_merge_embedding,
+                                             get_ner_cls_output_tensor_merge_input)
     # get hyperparams
     EMBED_DIM = hyperparams['EMBED_DIM']
     CRF_PARAMS = hyperparams['CRF_PARAMS']
@@ -241,8 +253,9 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
                                                label_size, bilstm_extrator, 
                                                cls_embedding, ner_embedding,
                                                outputlayer_name='cls_')
-        ner_cls_output_shape = get_ner_cls_output_tensor(ner_cls_layer, CLS2NER_KEYWORD_LEN).shape
-        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor, ner_cls_output_shape)(ner_cls_layer)
+        ner_cls_output_shape = get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN)(ner_cls_layer).shape
+        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN),
+                                      ner_cls_output_shape)(ner_cls_layer)
 
         # classification output will be used as a keyword adding to input of NER
         discriminator = Discriminator_new(onetask_output_shape=(CLS2NER_KEYWORD_LEN,),
@@ -254,7 +267,7 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
 
     elif model_choice=='CLS2NER_INPUT':  # cls_out merged to ner_input as virtual keywords
         from mtnlpmodel.utils.model_util import Discriminator
-        from mtnlpmodel.trainer.utils import build_vacablookuper_from_list
+        from mtnlpmodel.utils.input_process_util import build_vacablookuper_from_list
         vocabs = list(hyperparams['vocabulary_lookuper'].inverse_index_table.values())
         cls_labels = list(hyperparams['cls_label_lookuper'].inverse_index_table.values())
         vocabs.extend(cls_labels)
@@ -280,8 +293,14 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
                                                label_size, bilstm_extrator, 
                                                cls_embedding, ner_embedding,
                                                outputlayer_name='cls_')
-        ner_cls_output_shape = get_ner_cls_output_tensor(ner_cls_layer, CLS2NER_KEYWORD_LEN).shape
-        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor, ner_cls_output_shape)(ner_cls_layer)
+        ner_cls_output_shape = get_ner_cls_output_tensor_merge_input(CLS2NER_KEYWORD_LEN,
+                                                                     **{"vocab_size": vocab_size,
+                                                                        "label_size": label_size})(ner_cls_layer).shape
+
+        ner_cls_output_layer = Lambda(get_ner_cls_output_tensor_merge_input(
+                                          CLS2NER_KEYWORD_LEN,
+                                          **{"vocab_size": vocab_size,"label_size": label_size}),
+                                      ner_cls_output_shape)(ner_cls_layer)
 
         # classification output will be used as a keyword adding to input of NER
         discriminator = Discriminator(ner_input_layer, onetask_output_shape=(CLS2NER_KEYWORD_LEN,),
@@ -291,19 +310,15 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
 
     else: # task independent
         with tf.keras.backend.name_scope("Encoder"):
-            ner_embedding = Embedding(vocab_size,
+            embedding_layer = Embedding(vocab_size,
                                       EMBED_DIM,
                                       mask_zero=True,
                                       input_length=input_length,
                                       name='embedding'
-                                      )(ner_input_layer)
+                                      )
 
-            cls_embedding = Embedding(vocab_size,
-                                      EMBED_DIM,
-                                      mask_zero=True,
-                                      input_length=input_length,
-                                      name='embedding'
-                                      )(cls_input_layer)
+            ner_embedding = embedding_layer(ner_input_layer)
+            cls_embedding = embedding_layer(cls_input_layer)
 
         with tf.keras.backend.name_scope("Feature_extractor"):
             for bilstm_config in BiLSTM_STACK_CONFIG:
@@ -312,9 +327,9 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
 
         # classification branch
         _, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                               label_size, bilstm_extrator, 
-                                               cls_embedding, ner_embedding,
-                                               outputlayer_name='cls_')
+                                   label_size, bilstm_extrator,
+                                   cls_embedding, ner_embedding,
+                                   outputlayer_name='cls_')
         ner_branch_embedding = ner_embedding
 
     # NER branch
