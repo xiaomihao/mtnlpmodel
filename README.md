@@ -33,6 +33,10 @@ mtnlpmodel
 ```
 pip install mtnlpmodel
 ```
+### 获取代码
+```
+git clone https://github.com/xiaomihao/mtnlpmodel.git
+```
 ### Train
 * train.py：融合模型训练入口（包括：1.正常训练 'random_initial'；
                                  2.fine-tuning 'load weights'）。
