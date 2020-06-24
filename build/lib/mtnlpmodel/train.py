@@ -1,17 +1,14 @@
 import os
-import sys
 import tensorflow as tf
 from tf_crf_layer.loss import ConditionalRandomFieldLoss
 from tf_crf_layer.metrics import SequenceCorrectness
 from seq2annotation.utils import create_dir_if_needed, create_file_dir_if_needed, create_or_rm_dir_if_needed
 # tf.enable_eager_execution()
-from mtnlpmodel.utils.deliverablemodel_util import (_read_configure,
-                                                    ConverterForMTRequest,
+from mtnlpmodel.utils.input_process_util import _read_configure
+from mtnlpmodel.utils.deliverablemodel_util import (ConverterForMTRequest,
                                                     ConverterForMTResponse_VirtualPad,
                                                     mtinput_export_as_deliverable_model, )
 
-sys.path.append('.')
-sys.path.append('..')
 
 
 def main():
@@ -47,9 +44,14 @@ def main():
     # input_data should be shuffled and remove duplication outside the trainer before running the program.
     # input data should be corpus(no duplication, shuffle well)
 
-    data_dict = input_data_process(config, **{'MAX_SENTENCE_LEN': MAX_SENTENCE_LEN,      # preprocess the input_data
-                                              'CLS2NER_KEYWORD_LEN': CLS2NER_KEYWORD_LEN,})
-    
+    if MODEL_CHOICE=='VIRTUAL_EMBEDDING' or MODEL_CHOICE=='CLS2NER_INPUT':  # different model structures have different input process way
+        data_dict = input_data_process(config, **{'MAX_SENTENCE_LEN': MAX_SENTENCE_LEN,      # preprocess the input_data
+                                       'CLS2NER_KEYWORD_LEN': CLS2NER_KEYWORD_LEN,})
+    else:
+        data_dict = input_data_process(config, **{'MAX_SENTENCE_LEN': MAX_SENTENCE_LEN,  # preprocess the input_data
+                                                  'CLS2NER_KEYWORD_LEN': 0, })
+        PRETRAIN_EPOCHS = 0
+
     # get lookupers
     ner_tag_lookuper = data_dict['ner_tag_lookuper']
     cls_label_lookuper = data_dict['cls_label_lookuper']
@@ -61,7 +63,7 @@ def main():
 
     cls_train_x, cls_train_y = data_dict['cls_train_x'], data_dict['cls_train_y']
     cls_test_x, cls_test_y = data_dict['cls_test_x'], data_dict['cls_test_y']
-    
+
 
     # build model or finetuning
     from mtnlpmodel.core import build_model, finetune_model, get_freeze_list_for_finetuning
@@ -78,6 +80,7 @@ def main():
               'CRF_PARAMS': CRF_PARAMS
              }
     model_choice = MODEL_CHOICE   # VIRTUAL_EMBEDDING, CLS2NER_INPUT, OTHER
+    print("Model structure choosing {}".format(model_choice))
 
     from mtnlpmodel.core import finetuning_logger
     if FINETUNE:   # fine-tuning the model, load model by the weights
@@ -156,7 +159,7 @@ def main():
     # train model
     model.compile(optimizer=adam_optimizer,
                   loss={NER_out_name: ner_loss_func, CLS_out_name: 'categorical_crossentropy'},
-                  loss_weights={NER_out_name: 25., CLS_out_name: 10.},  # set weight of loss
+                  loss_weights={NER_out_name: 15., CLS_out_name: 10.},  # set weight of loss
                   metrics={NER_out_name: SequenceCorrectness(), CLS_out_name: 'categorical_accuracy'})
     
     model.fit(

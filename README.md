@@ -76,12 +76,12 @@ tensorboard --logdir=./results/summary_log_dir
 * Inference 推理
 ```
 # 修改 server/inference/configure.json 配置inference所需模型、数据的路径
-python server/inference/inference.py
+python server/inference/run_inference.py
 ```
 * Evaluation 评估
 ```
 # 修改 server/evaluation/configure.json 配置evaluation所需模型、数据的路径
-python server/evaluation/evaluation.py
+python server/evaluation/run_evaluation.py
 ```
 
 ### 推广
