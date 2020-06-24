@@ -1,3 +1,4 @@
+import os
 import tensorflow as tf
 from tensorflow.keras import Input
 from tensorflow.keras.models import Model
@@ -375,7 +376,6 @@ def get_freeze_list_for_finetuning(model_choice):
     
 
 def finetuning_logger(*args):
-    import os
     print('Fine-tuning processing: ')
     for arg in args:
         try:

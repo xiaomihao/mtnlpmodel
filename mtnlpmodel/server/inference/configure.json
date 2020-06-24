@@ -1,6 +1,6 @@
 {
-  "data_filepath": "./",
+  "data_filepath": "./data/",
   "input_rawdata": "input_data.txt",
-  "model_filepath": "./model/",
+  "model_filepath": "../deliverable_model/",
   "output_filepath": "./inference_out/"
 }

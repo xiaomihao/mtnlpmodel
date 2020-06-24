@@ -1,0 +1,51 @@
+#	{"label": "search_app", "id": "9a189427-ec67-4fdb-bce3-41b896077fc3"}
+给	O
+我	O
+找	O
+西	B-app
+瓜	I-app
+视	I-app
+频	L-app
+
+#	{"label": "turnon_app", "id": "b5f2b6e6-5387-4d17-ac5a-eb22c037fde1"}
+开	O
+启	O
+百	B-app
+度	I-app
+影	I-app
+音	L-app
+主	O
+界	O
+面	O
+
+#	{"label": "transfer_app", "id": "e94a403b-832b-439a-ba4f-885303743aba"}
+切	O
+换	O
+到	O
+微	B-app
+信	I-app
+短	I-app
+视	I-app
+频	L-app
+
+#	{"label": "to_position", "id": "b8011efa-c873-43ca-997b-15edb17db072"}
+我	O
+要	O
+去	O
+西	B-position
+城	I-position
+派	I-position
+出	I-position
+所	L-position
+
+#	{"label": "to_position_pass_passby", "id": "1cbcf987-c11a-4046-9614-5a489404d0d9"}
+路	O
+过	O
+南	B-pass
+北	I-pass
+大	I-pass
+街	L-pass
+去	O
+北	B-position
+京	L-position
+

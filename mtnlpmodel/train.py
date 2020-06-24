@@ -1,5 +1,4 @@
 import os
-import sys
 import tensorflow as tf
 from tf_crf_layer.loss import ConditionalRandomFieldLoss
 from tf_crf_layer.metrics import SequenceCorrectness
@@ -10,8 +9,6 @@ from mtnlpmodel.utils.deliverablemodel_util import (ConverterForMTRequest,
                                                     ConverterForMTResponse_VirtualPad,
                                                     mtinput_export_as_deliverable_model, )
 
-sys.path.append('.')
-sys.path.append('..')
 
 
 def main():

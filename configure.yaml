@@ -35,7 +35,6 @@ learning_rate:
 lr_decay: false
 early_stop: false
 
-
 # Data output
 result_dir: "./results"
 params_log_file: "./results/params.json"
