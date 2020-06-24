@@ -16,17 +16,17 @@
 ### 代码结构
 ```
 mtnlpmodel
-├── server/                      // server:inference->用于模型推理; evaluation->用于模型评估     
-├── train.py                     // 模型训练入口
-├── core.py                      // 模型构造，包括从零训练和finetuning
-└── utils/                       // 与模型训练相关的内容
-    ├── io_utils.py              // 读取数据和保存模型相关组件
-    ├── loss_func_util.py        // 一些损失函数
-    ├── lrset_util.py            // 学习率修改组件
-    ├── input_process_util.py    // 输入数据预处理组件
-    ├── model_util.py            // 一些layer和模块
-    ├── optimizer_util.py        // 处理模型保存、统计等任务的组件
-    └── triplet_loss_util        // triplet_loss相关组件，目前未启用
+├── server/                       // server:inference->用于模型推理; evaluation->用于模型评估     
+├── train.py                      // 模型训练入口
+├── core.py                       // 模型构造，包括从零训练和finetuning
+└── utils/                        // 与模型训练相关的内容
+    ├── deliverablemodel_util.py  // 保存模型相关组件
+    ├── loss_func_util.py         // 一些损失函数
+    ├── lrset_util.py             // 学习率修改组件
+    ├── input_process_util.py     // 输入数据预处理组件
+    ├── model_util.py             // 一些layer和模块
+    ├── optimizer_util.py         // 处理模型保存、统计等任务的组件
+    └── triplet_loss_util         // triplet_loss相关组件，目前未启用
 
 ```
 ### 安装
@@ -93,3 +93,7 @@ python server/evaluation/evaluation.py
 > deliverable_model 强大的模型封装工具，包含各种预处理和后处理，本项目推理和评估大量使用该工具
 > corpus_flow 强大的语料增强工具，实现了语料增强
 ```
+
+### TODO
+* 数据增强
+* 功能增加
