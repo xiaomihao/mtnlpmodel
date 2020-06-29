@@ -20,6 +20,7 @@ mtnlpmodel
 ├── train.py                      // 模型训练入口
 ├── core.py                       // 模型构造，包括从零训练和finetuning
 └── utils/                        // 与模型训练相关的内容
+    ├── ctrldir_util.py           // 路径控制组件
     ├── deliverablemodel_util.py  // 保存模型相关组件
     ├── loss_func_util.py         // 一些损失函数
     ├── lrset_util.py             // 学习率修改组件
