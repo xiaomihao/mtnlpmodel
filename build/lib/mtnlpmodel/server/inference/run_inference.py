@@ -8,7 +8,7 @@ import tensorflow as tf
 from deliverable_model import load
 from deliverable_model.request import Request
 from mtnlpmodel.utils.model_util import ArcFace
-from mtnlpmodel.utils.model_util import  VirtualEmbedding
+from mtnlpmodel.utils.model_util import VirtualEmbedding
 from tokenizer_tools.tagset.offset.corpus import Corpus
 
 tf.keras.utils.get_custom_objects()[ArcFace.__name__] = ArcFace
@@ -62,7 +62,7 @@ class MtModelInference_Deliverable:
         predict_result.write_to_file(os.path.join(self.config['output_filepath'], 'inference_out.conllx'))
 
         print('*** inference has been done, please check the result through the path below:')
-        print('==>{}'.format(self.config['output_filepath']))
+        print('==> {}'.format(self.config['output_filepath']))
 
         return
 
@@ -82,4 +82,4 @@ if __name__ == "__main__":
     config_filepath = './configure.json'
     MtModelInference_Deliverable(config_filepath).call_inference()
     end = time.time()
-    print('==>Time cost is', end - start, 's')
+    print('==> Time cost is', end - start, 's')

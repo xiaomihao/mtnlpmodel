@@ -239,6 +239,11 @@ def input_data_process(config, **hyperparams):
 
         for offset_data in data:
             tags = offset_to_biluo(offset_data)
+
+            for index, tag in enumerate(tags):
+                tags[index] = tag.replace('U', 'B')
+                tags[index] = tags[index].replace('L', 'I')
+
             words = offset_data.text
 
             tag_ids = [ner_tag_lookuper.lookup(i) for i in tags]

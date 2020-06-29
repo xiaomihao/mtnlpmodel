@@ -13,8 +13,8 @@ finetune: false
 model_choice: "VIRTUAL_EMBEDDING"  # choose from "VIRTUAL_EMBEDDING", "CLS2NER_INPUT", "OTHER"
 
 # model configure
-epochs: 20
-pretrain_epochs: 5
+epochs: 1
+pretrain_epochs: 0
 batch_size: 32
 pretrain_batchsize: 64
 intent_field: label
@@ -44,6 +44,7 @@ h5_weights_file: "./results/h5_weights/weights.h5"
 saved_model_dir: "./results/saved_model"
 deliverable_model_dir: "./results/deliverable_model"
 summary_log_dir: "./results/summary_log_dir"
+decoder_style: "BIO"  # BILUO, BIO
 
 # checkpoint
 save_checkpoints_secs: 60

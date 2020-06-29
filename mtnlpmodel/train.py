@@ -38,6 +38,7 @@ def main():
     USE_ATTENTION_LAYER = config.get("use_attention_layer", False)
     BiLSTM_STACK_CONFIG = config.get("bilstm_stack_config", [])
     CRF_PARAMS = config.get("crf_params", {})
+    DECODER_STYLE = config.get("decoder_style", "BILUO")
 
 
     # get preprocessed input data dict
@@ -101,8 +102,8 @@ def main():
     callbacks_list = []
 
     tensorboard_callback = tf.keras.callbacks.TensorBoard(
-        #log_dir=create_dir_if_needed(config["summary_log_dir"])
-        log_dir='.\\results\\summary_log_dir',
+        log_dir=create_dir_if_needed(config["summary_log_dir"]),
+        #log_dir='.\\results\\summary_log_dir',
         batch_size=BATCHSIZE,
     )
     callbacks_list.append(tensorboard_callback)
@@ -195,6 +196,7 @@ def main():
         padding_parameter={"maxlen": MAX_SENTENCE_LEN, "value": 0, "padding": "post"},
         addition_model_dependency=["tf-crf-layer"],
         custom_object_dependency=["tf_crf_layer"],
+        decoder_style=DECODER_STYLE,
     )
 
 

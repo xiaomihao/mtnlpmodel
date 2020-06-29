@@ -15,6 +15,7 @@ from deliverable_model.builder import (
 from deliverable_model.builtin import LookupProcessor
 from deliverable_model.builtin.processor import BILUOEncodeProcessor, PadProcessor
 from deliverable_model.processor_base import ProcessorBase
+from mtnlpmodel.utils.decoder_util import BIOEncodeProcessor
 
 import numpy as np
 from typing import Any
@@ -207,6 +208,7 @@ def mtinput_export_as_deliverable_model(
     padding_parameter=None,
     addition_model_dependency=None,
     custom_object_dependency=None,
+    decoder_style='BILUO'
 ):
     # check parameters
     assert any(
@@ -248,7 +250,11 @@ def mtinput_export_as_deliverable_model(
 
     processor_builder = ProcessorBuilder()
 
-    decode_processor = BILUOEncodeProcessor()
+    if decoder_style=='BILUO':
+        decode_processor = BILUOEncodeProcessor()
+    else:
+        decode_processor = BIOEncodeProcessor()
+
     decoder_processor_handle = processor_builder.add_processor(decode_processor)
 
     pad_processor = PadProcessor(padding_parameter=padding_parameter)

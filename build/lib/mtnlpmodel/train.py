@@ -2,9 +2,11 @@ import os
 import tensorflow as tf
 from tf_crf_layer.loss import ConditionalRandomFieldLoss
 from tf_crf_layer.metrics import SequenceCorrectness
-from seq2annotation.utils import create_dir_if_needed, create_file_dir_if_needed, create_or_rm_dir_if_needed
 # tf.enable_eager_execution()
 from mtnlpmodel.utils.input_process_util import _read_configure
+from mtnlpmodel.utils.ctrldir_util import (create_dir_if_needed,
+                                           create_file_dir_if_needed,
+                                           create_or_rm_dir_if_needed)
 from mtnlpmodel.utils.deliverablemodel_util import (ConverterForMTRequest,
                                                     ConverterForMTResponse_VirtualPad,
                                                     mtinput_export_as_deliverable_model, )
@@ -36,6 +38,7 @@ def main():
     USE_ATTENTION_LAYER = config.get("use_attention_layer", False)
     BiLSTM_STACK_CONFIG = config.get("bilstm_stack_config", [])
     CRF_PARAMS = config.get("crf_params", {})
+    DECODER_STYLE = config.get("decoder_style", "BILUO")
 
 
     # get preprocessed input data dict
@@ -99,8 +102,8 @@ def main():
     callbacks_list = []
 
     tensorboard_callback = tf.keras.callbacks.TensorBoard(
-        #log_dir=create_dir_if_needed(config["summary_log_dir"])
-        log_dir='.\\results\\summary_log_dir',
+        log_dir=create_dir_if_needed(config["summary_log_dir"]),
+        #log_dir='.\\results\\summary_log_dir',
         batch_size=BATCHSIZE,
     )
     callbacks_list.append(tensorboard_callback)
@@ -193,6 +196,7 @@ def main():
         padding_parameter={"maxlen": MAX_SENTENCE_LEN, "value": 0, "padding": "post"},
         addition_model_dependency=["tf-crf-layer"],
         custom_object_dependency=["tf_crf_layer"],
+        decoder_style=DECODER_STYLE,
     )
 
 
