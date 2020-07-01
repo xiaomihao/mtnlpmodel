@@ -22,10 +22,11 @@ def cls_branch(arcloss_param, output_dims, feature_extractor, cls_emb_layer, ner
             cls_feature_layer = feature_extractor(cls_emb_layer)
             cls_flat_lstm = Flatten()(cls_feature_layer)
             cls_flat = Dropout(0.25)(cls_flat_lstm)
-            cls_vec_layer = Dense(128, activation='relu', name='arc_vector')
-            cls_dense = cls_vec_layer(cls_flat)
+            cls_vec_layer = Dense(128, activation='tanh', name='arc_vector')
+            cls_vector = cls_vec_layer(cls_flat)
+            cls_vector = LayerNormalization()(cls_vector)
             cls_layer = ArcFace(output_dims, margin=0.2, name=outputlayer_name)
-            cls_arc = cls_layer(cls_dense)
+            cls_arc = cls_layer(cls_vector)
             cls_output = cls_arc
             # ner cls branch
             if ner_emb_layer is not None:
