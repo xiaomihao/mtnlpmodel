@@ -43,7 +43,7 @@ git clone https://github.com/xiaomihao/mtnlpmodel.git
                                  2.fine-tuning 'load weights'）。
 ```
 # WORKDIR为configure.yaml所在的路径
-python -m mtnlpmodel.train.py  #启动多输入模型训练
+python -m mtnlpmodel.train  #启动多输入模型训练
 ```
 ##### 正常训练
 ```
