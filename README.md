@@ -80,13 +80,21 @@ tensorboard --logdir=./results/summary_log_dir
 ### 模型推理和评估
 * Inference 推理
 ```
-# 修改 server/inference/configure.json 配置inference所需模型、数据的路径
-python server/inference/run_inference.py
+# 修改 server/inference/configure.json 配置inference所需模型、数据的路径,数据格式见server/inference/data
+# 该任务调用 deliverable_model
+python mtnlpmodel.server.inference.run_inference
 ```
 * Evaluation 评估
 ```
-# 修改 server/evaluation/configure.json 配置evaluation所需模型、数据的路径
-python server/evaluation/run_evaluation.py
+# 修改 server/evaluation/configure.json 配置evaluation所需模型、数据的路径,数据格式见server/evaluation/data
+# 该任务调用 deliverable_model
+python mtnlpmodel.server.evaluation.run_evaluation
+```
+* Calc Semantic Similarity 
+```
+# 修改 server/semantic_similarity/configure.json 配置calc_similarity所需模型、数据的路径,数据格式见server/semantic_similarity/data
+# 该任务调用 vector_deliverable_model
+python -m mtnlpmodel.server.semantic_similarity.calc_semantic_similarity
 ```
 
 ### 推广
