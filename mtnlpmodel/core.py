@@ -12,6 +12,7 @@ from tensorflow.keras.layers import (Embedding,
                                      LayerNormalization,)
 from tf_crf_layer.layer import CRF
 from tf_attention_layer.layers.global_attentioin_layer import GlobalAttentionLayer
+from mtnlpmodel.utils.model_util import Mish
 
 
 def cls_branch(arcloss_param, output_dims, feature_extractor, cls_emb_layer, ner_emb_layer=None, outputlayer_name='CLS'):
@@ -22,9 +23,9 @@ def cls_branch(arcloss_param, output_dims, feature_extractor, cls_emb_layer, ner
             cls_feature_layer = feature_extractor(cls_emb_layer)
             cls_flat_lstm = Flatten()(cls_feature_layer)
             cls_flat = Dropout(0.25)(cls_flat_lstm)
-            cls_vec_layer = Dense(128, activation='tanh', name='arc_vector')
+            cls_vec_layer = Dense(128, name='arc_vector', activation='linear')
             cls_vector = cls_vec_layer(cls_flat)
-            cls_vector = LayerNormalization()(cls_vector)
+            cls_vector = Mish()(cls_vector)
             cls_layer = ArcFace(output_dims, margin=0.2, name=outputlayer_name)
             cls_arc = cls_layer(cls_vector)
             cls_output = cls_arc
@@ -36,6 +37,7 @@ def cls_branch(arcloss_param, output_dims, feature_extractor, cls_emb_layer, ner
                 ner_cls_layer = cls_layer(ner_cls_vec_layer)
             else:
                 ner_cls_layer = None
+
     else:   # for softmax loss
         with tf.keras.backend.name_scope("CLS_branch"):
             # cls branch
@@ -43,6 +45,7 @@ def cls_branch(arcloss_param, output_dims, feature_extractor, cls_emb_layer, ner
             cls_flat_lstm = Flatten()(cls_feature_layer)
             cls_flat = Dropout(0.25)(cls_flat_lstm)
             cls_dense = Dense(output_dims, activation='softmax', name=outputlayer_name)
+            cls_vector = cls_dense
             cls_output = cls_dense(cls_flat)
             # ner cls branch
             if ner_emb_layer is not None:
@@ -52,7 +55,7 @@ def cls_branch(arcloss_param, output_dims, feature_extractor, cls_emb_layer, ner
             else:
                 ner_cls_layer = None
 
-    return ner_cls_layer, cls_output
+    return ner_cls_layer, cls_output, cls_vector
 
 
 
@@ -104,10 +107,10 @@ def build_model(model_choice, **hyperparams):
             bilstm_extrator = biLSTM
 
         # classification branch
-        ner_cls_layer, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                               label_size, bilstm_extrator, 
-                                               cls_embedding, ner_embedding,
-                                               outputlayer_name='cls')
+        ner_cls_layer, cls_output, cls_vector = cls_branch(hyperparams['Arcloss'], 
+                                                           label_size, bilstm_extrator, 
+                                                           cls_embedding, ner_embedding,
+                                                           outputlayer_name='cls')
         ner_cls_output_shape = get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN)(ner_cls_layer).shape
         ner_cls_output_layer = Lambda(get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN), ner_cls_output_shape)(ner_cls_layer)
 
@@ -146,10 +149,10 @@ def build_model(model_choice, **hyperparams):
             bilstm_extrator = biLSTM
 
         # classification branch
-        ner_cls_layer, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                               label_size, bilstm_extrator, 
-                                               cls_embedding, ner_embedding,
-                                               outputlayer_name='cls')
+        ner_cls_layer, cls_output, cls_vector = cls_branch(hyperparams['Arcloss'], 
+                                                           label_size, bilstm_extrator, 
+                                                           cls_embedding, ner_embedding,
+                                                           outputlayer_name='cls')
         ner_cls_output_shape = get_ner_cls_output_tensor_merge_input(CLS2NER_KEYWORD_LEN,
                                                                      **{"vocab_size":vocab_size,
                                                                         "label_size":label_size})(ner_cls_layer).shape
@@ -185,9 +188,9 @@ def build_model(model_choice, **hyperparams):
             bilstm_extrator = biLSTM
 
         # classification branch
-        _, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                   label_size, bilstm_extrator,
-                                   cls_embedding, outputlayer_name='cls')
+        _, cls_output, cls_vector = cls_branch(hyperparams['Arcloss'], 
+                                               label_size, bilstm_extrator,
+                                               cls_embedding, outputlayer_name='cls')
         ner_branch_embedding = ner_embedding
 
     # NER branch
@@ -203,7 +206,8 @@ def build_model(model_choice, **hyperparams):
 
     # merge NER and Classification
     model = Model(inputs=[ner_input_layer, cls_input_layer], outputs=[ner_output, cls_output])
-    return model
+    semantic_vector = Model(inputs=[ner_input_layer, cls_input_layer], outputs=cls_vector)
+    return model, semantic_vector
 
 
 def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams):
@@ -251,10 +255,10 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
             bilstm_extrator = biLSTM
 
         # classification branch
-        ner_cls_layer, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                               label_size, bilstm_extrator, 
-                                               cls_embedding, ner_embedding,
-                                               outputlayer_name='cls_')
+        ner_cls_layer, cls_output, cls_vector = cls_branch(hyperparams['Arcloss'], 
+                                                           label_size, bilstm_extrator, 
+                                                           cls_embedding, ner_embedding,
+                                                           outputlayer_name='cls_')
         ner_cls_output_shape = get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN)(ner_cls_layer).shape
         ner_cls_output_layer = Lambda(get_ner_cls_output_tensor_merge_embedding(CLS2NER_KEYWORD_LEN),
                                       ner_cls_output_shape)(ner_cls_layer)
@@ -291,10 +295,10 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
             bilstm_extrator = biLSTM
 
         # classification branch
-        ner_cls_layer, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                               label_size, bilstm_extrator, 
-                                               cls_embedding, ner_embedding,
-                                               outputlayer_name='cls_')
+        ner_cls_layer, cls_output, cls_vector = cls_branch(hyperparams['Arcloss'], 
+                                                           label_size, bilstm_extrator, 
+                                                           cls_embedding, ner_embedding,
+                                                           outputlayer_name='cls_')
         ner_cls_output_shape = get_ner_cls_output_tensor_merge_input(CLS2NER_KEYWORD_LEN,
                                                                      **{"vocab_size": vocab_size,
                                                                         "label_size": label_size})(ner_cls_layer).shape
@@ -328,10 +332,10 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
             bilstm_extrator = biLSTM
 
         # classification branch
-        _, cls_output = cls_branch(hyperparams['Arcloss'], 
-                                   label_size, bilstm_extrator,
-                                   cls_embedding, ner_embedding,
-                                   outputlayer_name='cls_')
+        _, cls_output, cls_vector = cls_branch(hyperparams['Arcloss'], 
+                                               label_size, bilstm_extrator,
+                                               cls_embedding, ner_embedding,
+                                               outputlayer_name='cls_')
         ner_branch_embedding = ner_embedding
 
     # NER branch
@@ -359,7 +363,7 @@ def finetune_model(model_choice, model_weights_path, freeze_list, **hyperparams)
         
     model.load_weights(model_weights_path, by_name=True)
     
-    return model
+    return model, cls_vector
 
 
 def get_freeze_list_for_finetuning(model_choice):

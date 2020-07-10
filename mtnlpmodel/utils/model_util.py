@@ -4,13 +4,13 @@ import tensorflow as tf
 from tf_crf_layer import keras_utils
 from tensorflow.keras import backend as K
 from tensorflow.keras.layers import Layer
+from tensorflow.keras.layers import Embedding
+from tensorflow.keras.activations import softplus, tanh
 from tensorflow.python.keras import backend as K
 from tensorflow.python.keras import constraints
 from tensorflow.python.keras import initializers
 from tensorflow.python.keras import regularizers
-from tensorflow.keras.layers import Embedding
 from tensorflow.python.ops import math_ops
-
 
 
 def lstm_cls(input_layer, output_dim):
@@ -226,7 +226,6 @@ class VirtualEmbedding(Embedding):
         return dict(list(base_config.items()) + list(config.items()))
 
 
-
 # ArcFace
 # Original paper: https://arxiv.org/pdf/1801.07698.pdf
 # Original implementation: https://github.com/deepinsight/insightface
@@ -304,5 +303,28 @@ class ArcFace(Layer):
 
         base_config = super().get_config().copy()
         return dict(list(base_config.items()) + list(config.items()))
+
+
+@keras_utils.register_keras_custom_object
+class Mish(Layer):
+    def __init__(self, **kwargs):
+        super(Mish, self).__init__(**kwargs)
+        #self.supports_masking = True
+
+    def call(self, inputs):
+        return inputs * tanh(softplus(inputs))
+
+    def get_config(self):
+        config = super(Mish, self).get_config()
+        return config
+
+    def compute_output_shape(self, input_shape):
+        '''
+         compute_output_shape(self, input_shape)：为了能让Keras内部shape的匹配检查通过，
+         这里需要重写compute_output_shape方法去覆盖父类中的同名方法，来保证输出shape是正确的。
+         父类Layer中的compute_output_shape方法直接返回的是input_shape这明显是不对的，
+         所以需要我们重写这个方法。所以这个方法也是4个要实现的基本方法之一。
+        '''
+        return input_shape
 
 

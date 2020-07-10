@@ -24,6 +24,22 @@ from deliverable_model.converter_base import ConverterBase
 from deliverable_model.request import Request
 
 
+class RequestProcessorForVector(ProcessorBase):
+    def preprocess(self, request: Request) -> Request:
+        tmp_ner_query_list = []
+        tmp_cls_query_list = []
+        tmp_ner_query_list.append(request.query)
+        tmp_cls_query_list.append(request.query)
+        request['NER'] = tmp_ner_query_list
+        request['CLS'] = tmp_cls_query_list
+
+        return request
+
+    @classmethod
+    def load(cls, *args, **kwargs):
+        return cls()
+
+
 class RequestProcessor(ProcessorBase):
     def preprocess(self, request: Request) -> Request:
         request['NER'] = request.query
@@ -43,6 +59,12 @@ class ConverterForMTRequest(ConverterBase):
         request["NER"] = request.query
 
         return [request["CLS"], request["NER"]]
+
+
+class ConverterForVector(ConverterBase):
+    def __call__(self, response) -> Response:
+        return response
+
 
 
 class ConverterForMTResponse(ConverterBase):
@@ -244,9 +266,9 @@ def mtinput_export_as_deliverable_model(
 
     # processor builder
 
-    vocabulary_lookup_table = lookup_tables['vocab_lookup']
-    tag_lookup_table = lookup_tables['tag_lookup']
-    label_lookup_table = lookup_tables['label_lookup']
+    vocabulary_lookup_table = lookup_tables.get('vocab_lookup', None)
+    tag_lookup_table = lookup_tables.get('tag_lookup', None)
+    label_lookup_table = lookup_tables.get('label_lookup', None)
 
     processor_builder = ProcessorBuilder()
 
@@ -286,6 +308,119 @@ def mtinput_export_as_deliverable_model(
     processor_builder.add_postprocess(tag_lookup_processor_handle)
     processor_builder.add_postprocess(label_lookup_processor_handle)
     processor_builder.add_postprocess(decoder_processor_handle)
+
+    processor_builder.save()
+
+    # model builder
+    model_builder = ModelBuilder()
+    model_builder.append_dependency(addition_model_dependency)
+    model_builder.set_custom_object_dependency(custom_object_dependency)
+
+    if converter_for_request:
+        model_builder.add_converter_for_request(converter_for_request)
+
+    if converter_for_response:
+        model_builder.add_converter_for_response(converter_for_response)
+
+    if tensorflow_saved_model:
+        model_builder.add_tensorflow_saved_model(tensorflow_saved_model)
+    elif keras_saved_model:
+        model_builder.add_keras_saved_model(keras_saved_model)
+    else:
+        model_builder.add_keras_h5_model(keras_h5_model)
+
+    model_builder.save()
+
+    # compose all the parts
+    deliverable_model_builder.add_processor(processor_builder)
+    deliverable_model_builder.add_metadata(metadata_builder)
+    deliverable_model_builder.add_model(model_builder)
+
+    metadata = deliverable_model_builder.save()
+
+    return metadata
+
+
+def mtinput_export_as_vector_deliverable_model(
+    output_dir,
+    tensorflow_saved_model=None,
+    converter_for_request: Union[None, Callable] = None,
+    converter_for_response: Union[None, Callable] = None,
+    keras_saved_model=None,
+    keras_h5_model=None,
+    meta_content_id="algorithmId-corpusId-configId-runId",
+    lookup_tables: Dict = None,
+    padding_parameter=None,
+    addition_model_dependency=None,
+    custom_object_dependency=None,
+    decoder_style='BILUO'
+):
+    # check parameters
+    assert any(
+        [tensorflow_saved_model, keras_saved_model, keras_h5_model]
+    ), "one and only one of [tensorflow_saved_model, keras_saved_model, keras_h5_model] must be set up"
+    assert (
+        sum(
+            int(bool(i))
+            for i in [tensorflow_saved_model, keras_saved_model, keras_h5_model]
+        )
+        == 1
+    ), "one and only one of [tensorflow_saved_model, keras_saved_model, keras_h5_model] must be set up"
+
+    # default value
+    addition_model_dependency = (
+        [] if addition_model_dependency is None else addition_model_dependency
+    )
+    custom_object_dependency = (
+        [] if custom_object_dependency is None else custom_object_dependency
+    )
+
+    # setup main object
+    deliverable_model_builder = DeliverableModelBuilder(output_dir)
+
+    # metadata builder
+    metadata_builder = MetadataBuilder()
+
+    meta_content = MetaContent(meta_content_id)
+
+    metadata_builder.set_meta_content(meta_content)
+
+    metadata_builder.save()
+
+    # processor builder
+
+    vocabulary_lookup_table = lookup_tables.get('vocab_lookup', None)
+
+    processor_builder = ProcessorBuilder()
+
+    if decoder_style=='BILUO':
+        decode_processor = BILUOEncodeProcessor()
+    else:
+        decode_processor = BIOEncodeProcessor()
+
+    decoder_processor_handle = processor_builder.add_processor(decode_processor)
+
+    pad_processor = PadProcessor(padding_parameter=padding_parameter)
+    pad_processor_handle = processor_builder.add_processor(pad_processor)
+
+    request_processor = RequestProcessorForVector()
+    request_processor_handle = processor_builder.add_processor(request_processor)
+    ner_vacab_lookup_processor = LookupProcessor(vocabulary_lookup_table)
+    ner_vacab_lookup_processor.pre_input_key = 'NER'
+    cls_vacab_lookup_processor = LookupProcessor(vocabulary_lookup_table)
+    cls_vacab_lookup_processor.pre_input_key = 'CLS'
+    ner_vocab_lookup_processor_handle = processor_builder.add_processor(ner_vacab_lookup_processor)
+    cls_vocab_lookup_processor_handle = processor_builder.add_processor(cls_vacab_lookup_processor)
+
+    # # pre process: encoder[memory text] > lookup[str -> num] > pad[to fixed length]
+    processor_builder.add_preprocess(request_processor_handle)
+    processor_builder.add_preprocess(decoder_processor_handle)
+    processor_builder.add_preprocess(ner_vocab_lookup_processor_handle)
+    processor_builder.add_preprocess(cls_vocab_lookup_processor_handle)
+    processor_builder.add_preprocess(pad_processor_handle)
+
+    # # # post process: lookup[num -> str] > encoder
+    # processor_builder.add_postprocess(decoder_processor_handle)
 
     processor_builder.save()
 

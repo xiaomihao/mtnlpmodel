@@ -1,0 +1,6 @@
+{
+  "data_filepath": "./data/",
+  "input_rawdata": "input_data.txt",
+  "model_filepath": "../vector_deliverable_model/",
+  "output_filepath": "./similarity_out/"
+}

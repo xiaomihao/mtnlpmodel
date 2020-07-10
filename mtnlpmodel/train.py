@@ -1,5 +1,6 @@
 import os
 import tensorflow as tf
+from tensorflow.keras.backend import set_session
 from tf_crf_layer.loss import ConditionalRandomFieldLoss
 from tf_crf_layer.metrics import SequenceCorrectness
 # tf.enable_eager_execution()
@@ -7,10 +8,11 @@ from mtnlpmodel.utils.input_process_util import _read_configure
 from mtnlpmodel.utils.ctrldir_util import (create_dir_if_needed,
                                            create_file_dir_if_needed,
                                            create_or_rm_dir_if_needed)
-from mtnlpmodel.utils.deliverablemodel_util import (ConverterForMTRequest,
+from mtnlpmodel.utils.deliverablemodel_util import (ConverterForVector,
+                                                    ConverterForMTRequest,
                                                     ConverterForMTResponse_VirtualPad,
-                                                    mtinput_export_as_deliverable_model, )
-
+                                                    mtinput_export_as_deliverable_model, 
+                                                    mtinput_export_as_vector_deliverable_model)
 
 
 def main():
@@ -19,7 +21,7 @@ def main():
 
     # get Parameters (controller)
     EPOCHS = config.get("epochs", 10)
-    PRETRAIN_EPOCHS =config.get("pretrain_cls", 5)
+    PRETRAIN_EPOCHS =config.get("pretrain_epochs", 5)
     BATCHSIZE = config.get("batch_size", 32)
     PRETRAIN_BATCHSIZE = config.get("pretrain_batchsize", 32)
     LEARNINGRATE = config.get("learning_rate", 0.001)
@@ -40,6 +42,13 @@ def main():
     CRF_PARAMS = config.get("crf_params", {})
     DECODER_STYLE = config.get("decoder_style", "BILUO")
 
+
+    # set gpu occupancy rate
+    gpu_cfg = tf.ConfigProto()
+    gpu_cfg.gpu_options.allocator_type = 'BFC'  # A "Best-fit with coalescing" algorithm, simplified from a version of dlmalloc.
+    gpu_cfg.gpu_options.per_process_gpu_memory_fraction = 0.5
+    gpu_cfg.gpu_options.allow_growth = True
+    set_session(tf.Session(config=gpu_cfg))
 
     # get preprocessed input data dict
     from mtnlpmodel.utils.input_process_util import input_data_process
@@ -90,10 +99,10 @@ def main():
         recommend_freeze_list = get_freeze_list_for_finetuning(model_choice)   # you can modify this list to customize the freeze list
         model_weights_path = os.path.abspath('./results/h5_weights/weights.h5')   # use weight
         finetuning_logger(*(model_weights_path, recommend_freeze_list))   # print some log
-        model = finetune_model(model_choice, model_weights_path, recommend_freeze_list, **params)
+        model, semantic_vector = finetune_model(model_choice, model_weights_path, recommend_freeze_list, **params)
 
     else:         # train the model by random initializer(make a fresh start to train a model)
-        model = build_model(model_choice, **params)     # to build the model
+        model, semantic_vector = build_model(model_choice, **params)     # to build the model and get cls_vector
     
     model.summary()
 
@@ -102,8 +111,8 @@ def main():
     callbacks_list = []
 
     tensorboard_callback = tf.keras.callbacks.TensorBoard(
-        log_dir=create_dir_if_needed(config["summary_log_dir"]),
-        #log_dir='.\\results\\summary_log_dir',
+        #log_dir=create_dir_if_needed(config["summary_log_dir"]),
+        log_dir='.\\results\\summary_log_dir',
         batch_size=BATCHSIZE,
     )
     callbacks_list.append(tensorboard_callback)
@@ -181,10 +190,19 @@ def main():
 
     model.save_weights(create_file_dir_if_needed(config["h5_weights_file"]))
 
+    semantic_vector.save(create_file_dir_if_needed(config["vector_model_file"]))
+    
+    semantic_vector.save_weights(create_file_dir_if_needed(config["vector_weights_file"]))
+
     tf.keras.experimental.export_saved_model(
             model, create_or_rm_dir_if_needed(config["saved_model_dir"])
         )
 
+    tf.keras.experimental.export_saved_model(
+            semantic_vector, create_or_rm_dir_if_needed(config["vector_model_dir"])
+        )
+
+    # save cls&NER deliverable model
     mtinput_export_as_deliverable_model(
         create_dir_if_needed(config["deliverable_model_dir"]),
         keras_saved_model=config["saved_model_dir"],
@@ -193,6 +211,19 @@ def main():
         lookup_tables={'vocab_lookup':vocabulary_lookuper,
                        'tag_lookup':ner_tag_lookuper,
                        'label_lookup':cls_label_lookuper},
+        padding_parameter={"maxlen": MAX_SENTENCE_LEN, "value": 0, "padding": "post"},
+        addition_model_dependency=["tf-crf-layer"],
+        custom_object_dependency=["tf_crf_layer"],
+        decoder_style=DECODER_STYLE,
+    )
+
+    # save semantic vector deliverable model
+    mtinput_export_as_vector_deliverable_model(
+        create_dir_if_needed(config["vector_deliverable_model_dir"]),
+        keras_saved_model=config["vector_model_dir"],
+        converter_for_request=ConverterForMTRequest(),
+        converter_for_response=ConverterForVector(), 
+        lookup_tables={'vocab_lookup':vocabulary_lookuper},
         padding_parameter={"maxlen": MAX_SENTENCE_LEN, "value": 0, "padding": "post"},
         addition_model_dependency=["tf-crf-layer"],
         custom_object_dependency=["tf_crf_layer"],

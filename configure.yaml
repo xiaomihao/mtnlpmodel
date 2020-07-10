@@ -36,6 +36,10 @@ lr_decay: false
 early_stop: false
 
 # Data output
+vector_model_dir: "./results/vector_model"
+vector_model_file: "./results/vector_model/vector_model.h5"
+vector_weights_file: "./results/vector_weights/vector_weights.h5"
+vector_deliverable_model_dir: "./results/vector_deliverable_model"
 result_dir: "./results"
 params_log_file: "./results/params.json"
 model_dir: "./results/model_dir"
@@ -44,7 +48,7 @@ h5_weights_file: "./results/h5_weights/weights.h5"
 saved_model_dir: "./results/saved_model"
 deliverable_model_dir: "./results/deliverable_model"
 summary_log_dir: "./results/summary_log_dir"
-decoder_style: "BIO"  # BILUO, BIO
+decoder_style: "BILUO"  # BILUO, BIO
 
 # checkpoint
 save_checkpoints_secs: 60

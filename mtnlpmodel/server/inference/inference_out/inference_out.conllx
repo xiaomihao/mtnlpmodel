@@ -1,4 +1,4 @@
-#	{"label": "search_app", "id": "b7a99c99-ff1b-4769-90e7-f756b352c2cc"}
+#	{"label": "search_app", "id": "b2ffdf4a-f79d-4ef5-adf0-bcc8f8c5bf6b"}
 给	O
 我	O
 找	O
@@ -7,7 +7,7 @@
 视	I-app
 频	L-app
 
-#	{"label": "search_app", "id": "a71f676b-d7a0-441a-8207-f34040f89bb4"}
+#	{"label": "turnon_app", "id": "772f44ba-f5d4-43ae-83f3-b32b1899dfe9"}
 开	O
 启	O
 百	B-app
@@ -18,7 +18,7 @@
 界	O
 面	O
 
-#	{"label": "transfer_app", "id": "b1987c25-b076-4ccc-a93c-aaa649d8505a"}
+#	{"label": "transfer_app", "id": "e92c67fb-e36f-4030-b78c-b4bd17e8424b"}
 切	O
 换	O
 到	O
@@ -28,7 +28,7 @@
 视	I-app
 频	L-app
 
-#	{"label": "to_position", "id": "5dd93e3c-ee47-4878-bc33-22414bd248fe"}
+#	{"label": "to_position", "id": "480a0db3-24be-4e40-9b34-ec61fee0a43f"}
 我	O
 要	O
 去	O
@@ -38,7 +38,7 @@
 出	I-position
 所	L-position
 
-#	{"label": "to_position_pass_passby", "id": "05954841-eb22-4d1f-9c89-07797adbfaae"}
+#	{"label": "to_position_pass_passby", "id": "d77ec3b8-da61-49ad-b7c7-a79507f1eac6"}
 路	O
 过	O
 南	B-pass
@@ -49,7 +49,7 @@
 北	B-position
 京	L-position
 
-#	{"label": "to_position_pass_passby", "id": "b2924dc6-cfd6-43d8-921b-d0352efe7edb"}
+#	{"label": "to_position_pass_passby", "id": "9dc3b231-2bce-43b4-a750-6e9b902f3347"}
 路	O
 过	O
 南	B-pass
@@ -60,7 +60,30 @@
 街	L-pass
 去	O
 北	B-position
-京	I-position
-西	I-position
-城	L-position
+京	L-position
+西	O
+城	O
+
+#	{"label": "transfer_app", "id": "56cc48aa-0b26-4fe5-9861-4655fe9028e1"}
+切	O
+成	O
+抖	B-app
+音	L-app
+
+#	{"label": "install_app", "id": "9e284b04-a64d-4121-8b33-66dc2c18ecd6"}
+装	O
+个	O
+腾	B-app
+讯	I-app
+视	I-app
+频	L-app
+
+#	{"label": "transfer_app", "id": "d8d77544-0d64-4c67-852d-61f3e025f78e"}
+切	O
+换	O
+为	O
+头	B-app
+条	L-app
+界	O
+面	O
 
