@@ -102,7 +102,7 @@ class CalcSemanticSimilarity:
 
 
 if __name__ == "__main__":
-    print('*****The Inference program is running now, please wait.*****\n')
+    print('*****The Similarity Calculation program is running now, please wait.*****\n')
     start = time.time()
     config_filepath = './configure.json'
     CalcSemanticSimilarity(config_filepath).calc_semantic_similarity()

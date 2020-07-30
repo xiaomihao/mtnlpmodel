@@ -78,7 +78,7 @@ def main():
 
 
     # build model or finetuning
-    from mtnlpmodel.core import build_model, finetune_model, get_freeze_list_for_finetuning
+    from mtnlpmodel.core import build_model_multi_input, finetune_model, get_freeze_list_for_finetuning
     params = {'EMBED_DIM': EMBED_DIM,
               'PRETRAIN_EPOCHS': PRETRAIN_EPOCHS,
               'BiLSTM_STACK_CONFIG': BiLSTM_STACK_CONFIG,
@@ -94,15 +94,8 @@ def main():
     model_choice = MODEL_CHOICE   # VIRTUAL_EMBEDDING, CLS2NER_INPUT, OTHER
     print("Model structure choosing {}".format(model_choice))
 
-    from mtnlpmodel.core import finetuning_logger
-    if FINETUNE:   # fine-tuning the model, load model by the weights
-        recommend_freeze_list = get_freeze_list_for_finetuning(model_choice)   # you can modify this list to customize the freeze list
-        model_weights_path = os.path.abspath('./results/h5_weights/weights.h5')   # use weight
-        finetuning_logger(*(model_weights_path, recommend_freeze_list))   # print some log
-        model, semantic_vector = finetune_model(model_choice, model_weights_path, recommend_freeze_list, **params)
-
-    else:         # train the model by random initializer(make a fresh start to train a model)
-        model, semantic_vector = build_model(model_choice, **params)     # to build the model and get cls_vector
+    # train the model by random initializer(make a fresh start to train a model)
+    model, semantic_vector = build_model_multi_input(model_choice, **params)     # to build the model and get cls_vector
     
     model.summary()
 
@@ -144,13 +137,8 @@ def main():
     # set optimizer
     adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNINGRATE, beta_1=0.9, beta_2=0.999, amsgrad=True)
 
-
-    if FINETUNE:
-        NER_out_name = 'crf_'
-        CLS_out_name = 'cls_'
-    else:
-        NER_out_name = 'crf'
-        CLS_out_name = 'cls'
+    NER_out_name = 'crf'
+    CLS_out_name = 'cls'
 
     # pretrain model -> train cls branch
     model.compile(optimizer=adam_optimizer,

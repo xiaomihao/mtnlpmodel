@@ -13,7 +13,6 @@ def class_counter(data, encoder):
     return classes_num
 
 
-
 def get_class_weight(data, encoder):
     cls_weight = dict()
     data_len = len(data)
@@ -39,7 +38,6 @@ def focal_loss(gamma=2, alpha=0.25):
             (1 - alpha) * K.pow(pt_0, gamma) * K.log(1. - pt_0))
 
     return focal_loss_fixed
-
 
 
 def focal_loss_mt(classes_num, gamma=2):
@@ -71,8 +69,6 @@ def focal_loss_mt(classes_num, gamma=2):
     return mt_focal_loss_fixed
 
 
-
-
 def _abandon_focal_loss_mt(classes_num, gamma=2): # there are some bugs in this function, so abandon
     '''focal loss paper:
        https://arxiv.org/pdf/1708.02002.pdf
@@ -98,7 +94,6 @@ def _abandon_focal_loss_mt(classes_num, gamma=2): # there are some bugs in this 
             (1 - alpha) * K.pow(pt_0, gamma) * K.log(1. - pt_0))
 
     return mt_focal_loss_fixed
-
 
 
 def triplet_loss(y_true, y_pred, alpha=0.2):

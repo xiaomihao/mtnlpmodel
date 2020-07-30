@@ -240,9 +240,10 @@ def input_data_process(config, **hyperparams):
         for offset_data in data:
             tags = offset_to_biluo(offset_data)
 
-            for index, tag in enumerate(tags):
-                tags[index] = tag.replace('U', 'B')
-                tags[index] = tags[index].replace('L', 'I')
+            if config['decoder_style']=='BIO':
+                for index, tag in enumerate(tags):
+                    tags[index] = tag.replace('U', 'B')
+                    tags[index] = tags[index].replace('L', 'I')
 
             words = offset_data.text
 
@@ -296,7 +297,7 @@ def input_data_process(config, **hyperparams):
             raw_x_cls, maxlen, padding="post"
         )  # right padding
 
-        from keras.utils import to_categorical
+        from tensorflow.keras.utils import to_categorical
         y_cls = np.array(raw_y_cls)
         y_cls = y_cls[:, np.newaxis]
         y_cls = to_categorical(y_cls, kwargs.get('cls_dims', 81))

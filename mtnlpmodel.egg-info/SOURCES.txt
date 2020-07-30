@@ -15,7 +15,8 @@ mtnlpmodel/server/evaluation/__init__.py
 mtnlpmodel/server/evaluation/run_evaluation.py
 mtnlpmodel/server/inference/__init__.py
 mtnlpmodel/server/inference/run_inference.py
-mtnlpmodel/utils/__init__.py
+mtnlpmodel/server/semantic_similarity/__init__.py
+mtnlpmodel/server/semantic_similarity/calc_semantic_similarity.py
 mtnlpmodel/utils/ctrldir_util.py
 mtnlpmodel/utils/decoder_util.py
 mtnlpmodel/utils/deliverablemodel_util.py

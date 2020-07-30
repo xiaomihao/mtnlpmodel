@@ -1,89 +1,204 @@
-#	{"label": "search_app", "id": "b2ffdf4a-f79d-4ef5-adf0-bcc8f8c5bf6b"}
+#	{"label": "电话", "id": "01e3c203-8eb6-40ad-9c1d-b0887f721230"}
 给	O
 我	O
-找	O
-西	B-app
-瓜	I-app
-视	I-app
-频	L-app
+播	O
+下	O
+1	B-电话号码
+3	I-电话号码
+1	I-电话号码
+5	I-电话号码
+2	I-电话号码
+0	I-电话号码
+1	I-电话号码
+2	I-电话号码
+2	I-电话号码
+7	I-电话号码
+7	L-电话号码
 
-#	{"label": "turnon_app", "id": "772f44ba-f5d4-43ae-83f3-b32b1899dfe9"}
-开	O
-启	O
-百	B-app
-度	I-app
-影	I-app
-音	L-app
-主	O
-界	O
-面	O
+#	{"label": "电话", "id": "f7d70e12-6967-4f2b-bda2-4f3bd4e82d3e"}
+拨	O
+叫	O
+1	B-电话号码
+3	I-电话号码
+3	I-电话号码
+8	I-电话号码
+8	I-电话号码
+7	I-电话号码
+7	I-电话号码
+9	I-电话号码
+7	I-电话号码
+4	I-电话号码
+4	L-电话号码
 
-#	{"label": "transfer_app", "id": "e92c67fb-e36f-4030-b78c-b4bd17e8424b"}
-切	O
-换	O
-到	O
-微	B-app
-信	I-app
-短	I-app
-视	I-app
-频	L-app
+#	{"label": "电话", "id": "a870572a-e7b4-44d7-9932-cd5ed9b80eff"}
+拨	O
+通	O
+1	O
+2	O
+3	O
+-	O
+3	O
+3	O
+3	O
+3	O
+-	O
+1	O
+1	O
+1	O
+1	O
 
-#	{"label": "to_position", "id": "480a0db3-24be-4e40-9b34-ec61fee0a43f"}
+#	{"label": "电话", "id": "5043d509-e41f-4b4e-b61a-1f3d8e75e309"}
+呼	O
+尾	O
+号	O
+9	B-电话号码结尾
+9	L-电话号码结尾
+的	O
+手	B-电话类型
+机	L-电话类型
+
+#	{"label": "音乐", "id": "d7d7551b-990c-410c-b064-58b78a68bcbd"}
+叶	B-专辑名
+惠	I-专辑名
+美	L-专辑名
+里	O
+的	O
+晴	B-歌曲名
+天	L-歌曲名
+播	O
+来	O
+听	O
+听	O
+
+#	{"label": "网络电台", "id": "f8d30bdd-d22f-49db-b24d-75044d19348e"}
+搜	O
+赵	B-人名
+丽	I-人名
+蓉	L-人名
+的	O
+小	B-网络电台分类名
+品	L-网络电台分类名
+如	B-网络电台节目名
+此	I-网络电台节目名
+包	I-网络电台节目名
+装	L-网络电台节目名
+
+#	{"label": "音乐", "id": "df59747b-f4b8-42ff-b263-28aa8599553c"}
+搜	O
+赵	B-人名
+本	I-人名
+山	L-人名
+的	O
+歌	O
+曲	O
+屯	B-歌曲名
+儿	L-歌曲名
+
+#	{"label": "股票", "id": "8e953264-dbc9-4370-b24d-cdcb48556d76"}
 我	O
 要	O
-去	O
-西	B-position
-城	I-position
-派	I-position
-出	I-position
-所	L-position
+唱	O
+燃	B-歌曲名
+烧	I-歌曲名
+我	I-歌曲名
+的	I-歌曲名
+卡	I-歌曲名
+路	I-歌曲名
+里	L-歌曲名
 
-#	{"label": "to_position_pass_passby", "id": "d77ec3b8-da61-49ad-b7c7-a79507f1eac6"}
-路	O
-过	O
-南	B-pass
-北	I-pass
-大	I-pass
-街	L-pass
-去	O
-北	B-position
-京	L-position
+#	{"label": "音乐", "id": "0c761089-7d48-4f60-94c1-4e49f795eb30"}
+有	O
+没	O
+有	O
+燃	B-歌曲名
+烧	I-歌曲名
+我	I-歌曲名
+的	I-歌曲名
+卡	I-歌曲名
+路	I-歌曲名
+里	L-歌曲名
+这	O
+首	O
+歌	O
 
-#	{"label": "to_position_pass_passby", "id": "9dc3b231-2bce-43b4-a750-6e9b902f3347"}
-路	O
-过	O
-南	B-pass
-北	I-pass
-城	I-pass
-西	I-pass
-大	I-pass
-街	L-pass
-去	O
-北	B-position
-京	L-position
-西	O
-城	O
+#	{"label": "网络电台", "id": "c38b272a-cbe9-488f-a738-eeaffb207e7a"}
+帮	O
+我	O
+找	O
+下	O
+双	B-网络电台节目名
+节	I-网络电台节目名
+棍	L-网络电台节目名
 
-#	{"label": "transfer_app", "id": "56cc48aa-0b26-4fe5-9861-4655fe9028e1"}
-切	O
-成	O
-抖	B-app
-音	L-app
+#	{"label": "音乐", "id": "7bb91b65-8cf0-428d-9f40-d81cfa12102a"}
+找	O
+双	B-网络电台节目名
+节	I-网络电台节目名
+棍	L-网络电台节目名
+听	O
 
-#	{"label": "install_app", "id": "9e284b04-a64d-4121-8b33-66dc2c18ecd6"}
-装	O
-个	O
-腾	B-app
-讯	I-app
-视	I-app
-频	L-app
+#	{"label": "音乐", "id": "8535dc16-e00d-4295-a08a-1f601ee7e6b3"}
+找	O
+相	B-网络电台节目名
+声	I-网络电台节目名
+双	I-网络电台节目名
+节	I-网络电台节目名
+棍	L-网络电台节目名
 
-#	{"label": "transfer_app", "id": "d8d77544-0d64-4c67-852d-61f3e025f78e"}
-切	O
-换	O
-为	O
-头	B-app
-条	L-app
-界	O
-面	O
+#	{"label": "音乐", "id": "bfb4940e-7f51-4709-b7df-5849fd6a50d3"}
+找	O
+歌	O
+曲	O
+双	B-歌曲名
+节	I-歌曲名
+棍	L-歌曲名
+
+#	{"label": "网络电台", "id": "de90e43f-63a0-4366-9e36-2c02df0e1990"}
+找	O
+郭	B-人名
+德	I-人名
+纲	L-人名
+的	O
+相	B-网络电台分类名
+声	L-网络电台分类名
+快	O
+使	O
+用	O
+双	B-网络电台节目名
+节	I-网络电台节目名
+棍	L-网络电台节目名
+
+#	{"label": "音乐", "id": "9e7ab9fe-551b-423d-9ebf-fab9c92d4a66"}
+找	O
+周	B-人名
+杰	I-人名
+伦	L-人名
+的	O
+歌	O
+双	B-歌曲名
+节	I-歌曲名
+棍	L-歌曲名
+
+#	{"label": "网络电台", "id": "dbc46bc7-ba88-43f0-9056-889c2e0eaed1"}
+找	O
+网	B-网络电台分类名
+络	I-网络电台分类名
+电	I-网络电台分类名
+台	L-网络电台分类名
+的	O
+红	B-网络电台节目名
+楼	I-网络电台节目名
+梦	L-网络电台节目名
+
+#	{"label": "音乐", "id": "232c1851-081a-4ed1-ae9a-cdc485ae7231"}
+网	B-应用名
+络	I-应用名
+电	I-应用名
+台	L-应用名
+放	O
+红	B-歌曲名
+楼	I-歌曲名
+梦	L-歌曲名
+听	O
+听	O
 

@@ -9,19 +9,18 @@ test_ratio: 0.1
 shuffle_pool_size: 1000
 
 # model select
-finetune: false
 model_choice: "VIRTUAL_EMBEDDING"  # choose from "VIRTUAL_EMBEDDING", "CLS2NER_INPUT", "OTHER"
 
 # model configure
-epochs: 1
-pretrain_epochs: 0
-batch_size: 32
+epochs: 10
+pretrain_epochs: 5
+batch_size: 64
 pretrain_batchsize: 64
 intent_field: label
 max_steps:
 max_steps_without_increase: 15000
-embedding_dim: 128
-lstm_size: 100
+embedding_dim: 300
+lstm_size: 128
 use_attention_layer: false
 max_sentence_len: 45
 cls2ner_keyword_len: 5
@@ -31,7 +30,7 @@ bilstm_stack_config: [
 # {units: 100, activation: 'seq2annotation.tf.python.keras.activations.relu6', recurrent_activation: 'seq2annotation.tf.python.keras.activations.relu6'},
 ]
 crf_params: {use_boundary: true}
-learning_rate:
+learning_rate: 0.001
 lr_decay: false
 early_stop: false
 

@@ -10,7 +10,9 @@ from deliverable_model.request import Request
 from mtnlpmodel.utils.model_util import ArcFace
 from mtnlpmodel.utils.model_util import VirtualEmbedding
 from tokenizer_tools.tagset.offset.corpus import Corpus
+from mtnlpmodel.utils.model_util import Mish
 
+tf.keras.utils.get_custom_objects()[Mish.__name__] = Mish
 tf.keras.utils.get_custom_objects()[ArcFace.__name__] = ArcFace
 tf.keras.utils.get_custom_objects()[VirtualEmbedding.__name__] = VirtualEmbedding
 
