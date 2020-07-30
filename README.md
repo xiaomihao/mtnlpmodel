@@ -43,11 +43,15 @@ git clone https://github.com/xiaomihao/mtnlpmodel.git
 * train.py：融合模型训练入口
 ```
 # WORKDIR为configure.yaml所在的路径
+# configure.yaml 中 input_mode 设置为 "multi"  =>  input_mode: "multi" 
+
 python -m mtnlpmodel.train  #启动多输入模型训练
 ```
 ### Fine-tuning
 ```
 # WORKDIR为configure.yaml所在的路径
+# configure.yaml 中 input_mode 设置为 "single"  =>  input_mode: "single" 
+
 python -m mtnlpmodel.finetuning  #启动单输入fine-tuning
 ```
 
