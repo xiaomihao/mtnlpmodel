@@ -31,7 +31,6 @@ def main():
 
     # get Parameters (model select)
     MODEL_CHOICE = config.get("model_choice", "VIRTUAL_EMBEDDING")
-    FINETUNE = config.get("finetune", False)
 
     # get Parameters (model structure)
     CLS2NER_KEYWORD_LEN = config.get("cls2ner_keyword_len", 5)
@@ -104,8 +103,8 @@ def main():
     callbacks_list = []
 
     tensorboard_callback = tf.keras.callbacks.TensorBoard(
-        log_dir=create_dir_if_needed(config["summary_log_dir"]),
-        #log_dir='.\\results\\summary_log_dir',  # for windows
+        #log_dir=create_dir_if_needed(config["summary_log_dir"]),
+        log_dir='.\\results\\summary_log_dir',  # for windows
         batch_size=BATCHSIZE,
     )
     callbacks_list.append(tensorboard_callback)
