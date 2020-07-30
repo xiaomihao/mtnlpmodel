@@ -11,6 +11,7 @@ from mtnlpmodel.utils.model_util import ArcFace
 from mtnlpmodel.utils.model_util import VirtualEmbedding
 from tokenizer_tools.tagset.offset.corpus import Corpus
 from mtnlpmodel.utils.model_util import Mish
+from tokenizer_tools.utils.batch_iterator import BatchingIterator
 
 tf.keras.utils.get_custom_objects()[Mish.__name__] = Mish
 tf.keras.utils.get_custom_objects()[ArcFace.__name__] = ArcFace
@@ -53,6 +54,9 @@ class MtModelInference_Deliverable:
         output = []
         batch_size = 1
         batches = MtModelInference_Deliverable.generate_batch_input(input_data, batch_size)
+        # batch_generator = BatchingIterator(batch_size)
+        # batches = batch_generator(input_data)
+
         for batch in tqdm.tqdm(batches):
             request = Request(batch)
             response = model.inference(request)

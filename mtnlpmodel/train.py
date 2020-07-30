@@ -104,8 +104,8 @@ def main():
     callbacks_list = []
 
     tensorboard_callback = tf.keras.callbacks.TensorBoard(
-        #log_dir=create_dir_if_needed(config["summary_log_dir"]),
-        log_dir='.\\results\\summary_log_dir',
+        log_dir=create_dir_if_needed(config["summary_log_dir"]),
+        #log_dir='.\\results\\summary_log_dir',  # for windows
         batch_size=BATCHSIZE,
     )
     callbacks_list.append(tensorboard_callback)

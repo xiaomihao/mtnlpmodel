@@ -4,6 +4,7 @@ setup.cfg
 setup.py
 mtnlpmodel/__init__.py
 mtnlpmodel/core.py
+mtnlpmodel/fine_tuning.py
 mtnlpmodel/train.py
 mtnlpmodel.egg-info/PKG-INFO
 mtnlpmodel.egg-info/SOURCES.txt

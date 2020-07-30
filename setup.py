@@ -23,7 +23,7 @@ install_requires = [
 setup(
     # _PKG_NAME will be used in Makefile for dev release
     name=os.getenv("_PKG_NAME", "mtnlpmodel"),
-    version="0.0.1",
+    version="0.0.2",
     packages=setuptools.find_packages(),
     include_package_data=True,
     url="https://github.com/xiaomihao/mtnlp_model",

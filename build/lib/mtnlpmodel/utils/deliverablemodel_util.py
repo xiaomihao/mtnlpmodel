@@ -52,6 +52,13 @@ class RequestProcessor(ProcessorBase):
         return cls()
 
 
+class ConverterForRequest(ConverterBase):
+    '''Now only support NER and CLS'''
+    def call(self, request: Request) -> Any:
+        request['input'] = request.query
+        return request
+
+
 class ConverterForMTRequest(ConverterBase):
     '''Now only support NER and CLS'''
     def call(self, request: Request) -> Any:

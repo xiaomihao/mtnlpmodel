@@ -192,7 +192,6 @@ def random_sampling_to_samesize(ner_data_tuple, cls_data_tuple):
     return ner_processed_tuple, cls_processed_tuple
 
 
-
 def input_data_process(config, **hyperparams):
     # read NER/CLS individually (only support *.conllx)
     input_mode = config['input_mode']
