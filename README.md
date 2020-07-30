@@ -21,6 +21,7 @@ mtnlpmodel
 ├── core.py                       // 模型构造，包括从零训练和finetuning
 └── utils/                        // 与模型训练相关的内容
     ├── ctrldir_util.py           // 路径控制组件
+    ├── decoder_util.py           // 解码工具组件
     ├── deliverablemodel_util.py  // 保存模型相关组件
     ├── loss_func_util.py         // 一些损失函数
     ├── lrset_util.py             // 学习率修改组件
@@ -39,30 +40,18 @@ pip install mtnlpmodel
 git clone https://github.com/xiaomihao/mtnlpmodel.git
 ```
 ### Train
-* train.py：融合模型训练入口（包括：1.正常训练 'random_initial'；
-                                 2.fine-tuning 'load weights'）。
+* train.py：融合模型训练入口
 ```
 # WORKDIR为configure.yaml所在的路径
 python -m mtnlpmodel.train  #启动多输入模型训练
 ```
-##### 正常训练
+### Fine-tuning
 ```
-vi configure.yaml 
+# WORKDIR为configure.yaml所在的路径
+python -m mtnlpmodel.finetuning  #启动单输入fine-tuning
+```
 
-# finetune=false 
-   # 以当前configure配置从头训练模型，模型参数随机初始化
-   # 从头开始训练模型
-```
-##### fine-tuning
-```
-vi configure.yaml
-
-# finetune=true 
-   # 加载预训练模型以configure配置微调模型，模型参数由预训练模型填充；
-   # 在train.py中可根据实际权重参数存放位置修改model_weights_path
-   # train.py中recommend_freeze_list的层为冻结层，不参与训练更新，可自行配置。
-```
-###### 模型选择
+###### 模型选择(train / Finetuning)
 ```
 vi configure.yaml 
 

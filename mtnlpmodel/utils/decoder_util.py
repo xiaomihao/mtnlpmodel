@@ -1,9 +1,16 @@
+import copy
 from typing import List
+from collections import namedtuple
+from pathlib import Path
 from tokenizer_tools.tagset.NER.base_tagset import BaseTagSet
 from tokenizer_tools.tagset.exceptions import TagSetDecodeError
 from tokenizer_tools.tagset.offset.document import Document
 from tokenizer_tools.tagset.offset.span import Span
 from tokenizer_tools.tagset.offset.span_set import SpanSet
+from deliverable_model.processor_base import ProcessorBase
+from deliverable_model.request import Request
+from deliverable_model.response import Response
+
 
 
 def tags_to_span_set(tags: List[str]) -> SpanSet:
@@ -220,17 +227,7 @@ class BIOSequenceEncoderDecoder(object):
         return seq
 
 
-from collections import namedtuple
-from pathlib import Path
-import copy
-
-from deliverable_model.processor_base import ProcessorBase
-from deliverable_model.request import Request
-from deliverable_model.response import Response
-
-
 PredictResult = namedtuple("PredictResult", ["sequence", "is_failed", "exec_msg"])
-
 
 class BIOEncodeProcessor(ProcessorBase):
     def __init__(self, decoder=None, **kwargs):
