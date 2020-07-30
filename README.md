@@ -51,6 +51,7 @@ python -m mtnlpmodel.train  #启动多输入模型训练
 ```
 # WORKDIR为configure.yaml所在的路径
 # configure.yaml 中 input_mode 设置为 "single"  =>  input_mode: "single" 
+# Finetuning 需要./results/h5_weights/weights.h5，请将相关文件放在指定路径下
 
 python -m mtnlpmodel.finetuning  #启动单输入fine-tuning
 ```
