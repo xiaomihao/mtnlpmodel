@@ -12,7 +12,7 @@ def read_from_file(path):
     return output
 
 
-def _read_configure(config_filepath, return_empty=False) -> dict:
+def _read_configure(config_filepath, return_empty=False):
     import os
     import pprint
     from pconf import Pconf

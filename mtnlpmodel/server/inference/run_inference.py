@@ -44,13 +44,13 @@ class MtModelInference_Deliverable:
     def generate_batch_input(input_data, batch_size):
         length = len(input_data)
         if length<batch_size:
-            return input_data
+            yield input_data
         else:
             for i in range(0, length, batch_size):
                 yield(input_data[i: i+batch_size])
 
 
-    def _inference(self, model, input_data: list):
+    def _inference(self, model, input_data):
         output = []
         batch_size = 1
         batches = MtModelInference_Deliverable.generate_batch_input(input_data, batch_size)

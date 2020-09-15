@@ -1,6 +1,6 @@
 {
   "data_filepath": "./data/",
   "input_rawdata": "input_data.txt",
-  "model_filepath": "../../../results/deliverable_model/",
+  "model_filepath": "C:\\Users\\liang.mi\\Desktop\\sem_2\\deliverable_model\\",
   "output_filepath": "./inference_out/"
 }

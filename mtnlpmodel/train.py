@@ -77,7 +77,7 @@ def main():
 
 
     # build model or finetuning
-    from mtnlpmodel.core import build_model_multi_input, finetune_model, get_freeze_list_for_finetuning
+    from mtnlpmodel.core import build_model_multi_input
     params = {'EMBED_DIM': EMBED_DIM,
               'PRETRAIN_EPOCHS': PRETRAIN_EPOCHS,
               'BiLSTM_STACK_CONFIG': BiLSTM_STACK_CONFIG,
